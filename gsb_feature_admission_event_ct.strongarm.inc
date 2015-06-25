@@ -19,16 +19,16 @@ function gsb_feature_admission_event_ct_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'metatags' => array(
-          'weight' => '18',
+          'weight' => '19',
         ),
         'title' => array(
           'weight' => '1',
         ),
         'path' => array(
-          'weight' => '17',
+          'weight' => '18',
         ),
         'redirect' => array(
-          'weight' => '16',
+          'weight' => '17',
         ),
         'workbench_access' => array(
           'weight' => '0',
