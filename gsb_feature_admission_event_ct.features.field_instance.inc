@@ -767,7 +767,7 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_body',
     'label' => 'Body',
-    'required' => 1,
+    'required' => 0,
     'settings' => array(
       'better_formats' => array(
         'allowed_formats' => array(
@@ -1359,7 +1359,7 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_link_single',
     'label' => 'URL',
-    'required' => 1,
+    'required' => 0,
     'settings' => array(
       'absolute_url' => 1,
       'attributes' => array(
@@ -1381,10 +1381,10 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
         'insert_plugin' => '',
       ),
       'rel_remove' => 'default',
-      'title' => 'none',
+      'title' => 'value',
       'title_label_use_field_label' => 0,
       'title_maxlength' => 128,
-      'title_value' => '',
+      'title_value' => '[node:title]',
       'url' => 0,
       'user_register_form' => FALSE,
       'validate_url' => 1,

@@ -23,14 +23,17 @@ function gsb_feature_admission_event_ct_form_admission_event_node_form_alter(&$f
       ':input[name="field_event_detail[' . $language . ']"],value="1"' => array('!value' => (string)'1'),
       ':input[name="field_event_detail[' . $language . ']"],value=""' => array('!value' => (string)''),
     ),
+    'required' => array(
+      ':input[name="field_event_detail[' . $language . ']"]' => array('value' => (string)'1'),
+    ),
   );
 
   $form['field_body']['#states']['required'][':input[name="field_event_detail[' . $language . ']"]'] = array(
-    array('value' => 0),
+    array('value' => (string)'0'),
   );
 
-  $form['field_event_location'][und][0]['field_link_map']['#states']['invisible'][':input[name="field_event_detail[' . $language . ']"]'] = array(
-    array('value' => 1),
+  $form['field_event_location'][$language][0]['field_link_map']['#states']['invisible'][':input[name="field_event_detail[' . $language . ']"]'] = array(
+    array('value' => (string)'1'),
   );
 
   // Perform additional validation.
