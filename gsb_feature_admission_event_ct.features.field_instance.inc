@@ -2613,9 +2613,9 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
           'gsb_wysiwyg_text' => 0,
           'image_resource_caption' => 0,
           'image_text_equivalent' => 0,
-          'markdown' => 'markdown',
+          'markdown' => 0,
           'plain_text' => 0,
-          'sidebar' => 0,
+          'sidebar' => 'sidebar',
           'slideshow' => 0,
         ),
         'allowed_formats_toggle' => 1,
@@ -2675,7 +2675,55 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 14,
+      'weight' => 29,
+    ),
+    'workbench_access_field' => 0,
+  );
+
+  // Exported field_instance: 'node-admission_event-field_tag'
+  $field_instances['node-admission_event-field_tag'] = array(
+    'bundle' => 'admission_event',
+    'custom_add_another' => '',
+    'custom_remove' => '',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(
+          'conditions' => array(),
+        ),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 22,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'node',
+    'field_name' => 'field_tag',
+    'label' => 'Keywords',
+    'required' => 0,
+    'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'taxonomy',
+      'settings' => array(
+        'autocomplete_path' => 'taxonomy/autocomplete',
+        'size' => 60,
+      ),
+      'type' => 'taxonomy_autocomplete',
+      'weight' => 36,
     ),
     'workbench_access_field' => 0,
   );
