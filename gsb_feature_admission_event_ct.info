@@ -1,7 +1,7 @@
 name = GSB Feature Admission Event Content Type
 core = 7.x
 package = GSB
-version = 7.x-5.0
+version = 7.x-1.0
 project = gsb_feature_admission_event_ct
 dependencies[] = addressfield
 dependencies[] = concat_field
