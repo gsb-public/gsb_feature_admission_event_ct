@@ -104,8 +104,12 @@ function gsb_feature_admission_event_ct_form_admission_event_node_form_alter(&$f
     ),
   );
 
-    // Perform additional validation.
-    $form['#validate'][] = 'gsb_feature_admission_event_ct_form_validate';
+  $form['field_event_location'][und][0]['field_link_map']['#states']['invisible'][':input[name="field_event_detail[' . $language . ']"]'] = array(
+    array('value' => 1),
+  );
+
+  // Perform additional validation.
+  $form['#validate'][] = 'gsb_feature_admission_event_ct_form_validate';
 }
 
 
