@@ -85,4 +85,17 @@ function gsb_feature_admission_event_ct_after_build($form, &$form_state) {
 function gsb_feature_admission_event_ct_form_validate($form, &$form_state) {
   $language = $form['language']['#value'];
   $values = $form_state['values'];
+  // Validate the conditional mandatory fields.
+  if ($values['field_event_detail'][$language][0]['value'] == '1') {
+    if (empty($values['field_link_single'][$language][0]['value'])) {
+      $field_label = $form['field_link_single'][$language]['#title'];
+      form_set_error('field_link_single]['.$language.'][0][url', $field_label . ' field is required.');
+    }
+  }
+  if ($values['field_event_detail'][$language][0]['value'] == '0') {
+    if (empty($values['field_body'][$language][0]['value'])) {
+      $field_label = $form['field_body'][$language]['#title'];
+      form_set_error('field_body]['.$language.'][0][value', $field_label . ' field is required.');
+    }
+  }
 }
