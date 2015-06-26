@@ -50,9 +50,9 @@ function gsb_feature_admission_event_ct_field_group_info() {
     'label' => 'Contact Information',
     'weight' => '31',
     'children' => array(
-      0 => 'field_person_title',
-      1 => 'field_email',
-      2 => 'field_person_ref',
+      0 => 'field_email',
+      1 => 'field_person_ref',
+      2 => 'field_person_title',
     ),
     'format_type' => 'tab',
     'format_settings' => array(
@@ -162,7 +162,7 @@ function gsb_feature_admission_event_ct_field_group_info() {
     'children' => array(
       0 => 'field_link_event_more_info',
       1 => 'field_register_url',
-      2 => 'field_registration_deadline_date',
+      2 => 'field_date_time',
     ),
     'format_type' => 'tab',
     'format_settings' => array(
@@ -243,14 +243,14 @@ function gsb_feature_admission_event_ct_field_group_info() {
     'label' => 'Event',
     'weight' => '8',
     'children' => array(
-      0 => 'group_locations',
-      1 => 'group_description',
-      2 => 'group_speakers',
-      3 => 'group_registration',
-      4 => 'group_schedule',
-      5 => 'group_contact',
-      6 => 'group_additional_topics',
-      7 => 'group_keywords',
+      0 => 'group_additional_topics',
+      1 => 'group_contact',
+      2 => 'group_description',
+      3 => 'group_keywords',
+      4 => 'group_locations',
+      5 => 'group_registration',
+      6 => 'group_schedule',
+      7 => 'group_speakers',
     ),
     'format_type' => 'tabs',
     'format_settings' => array(
