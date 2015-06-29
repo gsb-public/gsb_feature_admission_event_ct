@@ -94,6 +94,12 @@ function gsb_feature_admission_event_ct_strongarm() {
       'revision' => array(
         'custom_settings' => FALSE,
       ),
+      'compact' => array(
+        'custom_settings' => FALSE,
+      ),
+      'expanded' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
