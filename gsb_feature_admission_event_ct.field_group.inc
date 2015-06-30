@@ -48,11 +48,11 @@ function gsb_feature_admission_event_ct_field_group_info() {
   $field_group->parent_name = 'group_wrapper_event';
   $field_group->data = array(
     'label' => 'Contact Information',
-    'weight' => '31',
+    'weight' => '29',
     'children' => array(
-      0 => 'field_email',
-      1 => 'field_person_ref',
-      2 => 'field_person_title',
+      0 => 'field_person_title',
+      1 => 'field_email',
+      2 => 'field_person_ref',
     ),
     'format_type' => 'tab',
     'format_settings' => array(
@@ -103,8 +103,8 @@ function gsb_feature_admission_event_ct_field_group_info() {
   $field_group->mode = 'form';
   $field_group->parent_name = 'group_wrapper_event';
   $field_group->data = array(
-    'label' => 'Keywords',
-    'weight' => '30',
+    'label' => 'Keyword',
+    'weight' => '32',
     'children' => array(
       0 => 'field_tag',
     ),
@@ -243,14 +243,15 @@ function gsb_feature_admission_event_ct_field_group_info() {
     'label' => 'Event',
     'weight' => '8',
     'children' => array(
-      0 => 'group_additional_topics',
-      1 => 'group_contact',
-      2 => 'group_description',
-      3 => 'group_keywords',
-      4 => 'group_locations',
-      5 => 'group_registration',
-      6 => 'group_schedule',
-      7 => 'group_speakers',
+      0 => 'group_event_type',
+      1 => 'group_region',
+      2 => 'group_contact',
+      3 => 'group_description',
+      4 => 'group_keywords',
+      5 => 'group_locations',
+      6 => 'group_registration',
+      7 => 'group_schedule',
+      8 => 'group_speakers',
     ),
     'format_type' => 'tabs',
     'format_settings' => array(

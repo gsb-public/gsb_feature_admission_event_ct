@@ -38,6 +38,7 @@ features[field_instance][] = node-admission_event-field_date
 features[field_instance][] = node-admission_event-field_date_time
 features[field_instance][] = node-admission_event-field_editorial_summary
 features[field_instance][] = node-admission_event-field_email
+features[field_instance][] = node-admission_event-field_event_category
 features[field_instance][] = node-admission_event-field_event_date
 features[field_instance][] = node-admission_event-field_event_detail
 features[field_instance][] = node-admission_event-field_event_location
