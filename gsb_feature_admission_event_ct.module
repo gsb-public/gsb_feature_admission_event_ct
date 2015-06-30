@@ -16,32 +16,62 @@ function gsb_feature_admission_event_ct_form_admission_event_node_form_alter(&$f
   }
 
   $language = $form['language']['#value'];
-  $form['field_event_speakers']['#after_build'] = array('gsb_feature_admission_event_ct_after_build');
 
   $form['field_link_single']['#states'] = array(
     'invisible' => array(
       ':input[name="field_event_detail[' . $language . ']"],value="1"' => array('!value' => (string)'1'),
-      ':input[name="field_event_detail[' . $language . ']"],value=""' => array('!value' => (string)''),
     ),
     'required' => array(
       ':input[name="field_event_detail[' . $language . ']"]' => array('value' => (string)'1'),
     ),
   );
 
-  $form['field_body']['#states']['required'][':input[name="field_event_detail[' . $language . ']"]'] = array(
-    array('value' => (string)'0'),
+  $form['field_body']['#states'] = array(
+    'required' => array(
+      ':input[name="field_event_detail[' . $language . ']"]' => array('value' => (string)'0'),
+    ),
   );
 
-  $form['field_event_location'][$language][0]['field_link_map']['#states']['invisible'][':input[name="field_event_detail[' . $language . ']"]'] = array(
-    array('value' => (string)'1'),
+  // show/hide the event location fields
+  foreach ($form['field_event_location'][$language] as $key => $value) {
+    if (is_numeric($key) && $key >= 0) {
+      $form['field_event_location'][$language][$key]['field_link_map']['#states'] = array(
+        'invisible' => array(
+          ':input[name="field_event_detail[' . $language . ']"]' => array('value' => (string)'1'),
+        )
+      );
+    }
+  }
+
+  // show/hide the admission event detail related fields
+  $hide_detail_fields = array(
+    'field_person_ref',
+    'field_body',
+    'field_event_speakers',
+    'field_link_event_more_info',
+    'field_schedule',
+    'field_email',
+    'field_person_title',
+    'field_register_url',
+    'field_date_time'
   );
+
+  foreach ($hide_detail_fields as $field_name) {
+    $form[$field_name]['#states'] = array(
+      'invisible' => array(
+        ':input[name="field_event_detail[' . $language . ']"]' => array('value' => (string)'1'),
+      ),
+    );
+  }
+
   drupal_add_js(array('gsb_feature_admission_event_ct' => array('currentNid' => $form['nid']['#value'])), 'setting');
   drupal_add_js(drupal_get_path('module', 'gsb_feature_admission_event_ct') . '/js/gsb_feature_admission_event_ct.js');
+
+  $form['field_event_speakers']['#after_build'] = array('gsb_feature_admission_event_ct_after_build');
 
   // Perform additional validation.
   $form['#validate'][] = 'gsb_feature_admission_event_ct_form_validate';
 }
-
 
 /**
  * gsb_feature_admission_event_ct_after_build().
