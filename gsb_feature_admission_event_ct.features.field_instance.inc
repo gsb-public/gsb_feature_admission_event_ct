@@ -157,7 +157,7 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
       'module' => 'hs_taxonomy',
       'settings' => array(),
       'type' => 'taxonomy_hs',
-      'weight' => 34,
+      'weight' => 7,
     ),
     'workbench_access_field' => 0,
   );
@@ -220,7 +220,7 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
         'year_range' => '-3:+3',
       ),
       'type' => 'date_popup',
-      'weight' => 11,
+      'weight' => 10,
     ),
     'workbench_access_field' => 0,
   );
@@ -441,6 +441,46 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
       'weight' => 32,
     ),
     'workbench_access_field' => 0,
+  );
+
+  // Exported field_instance: 'node-admission_event-field_event_category'
+  $field_instances['node-admission_event-field_event_category'] = array(
+    'bundle' => 'admission_event',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(
+          'conditions' => array(),
+        ),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 23,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_event_category',
+    'label' => 'Event Type',
+    'required' => FALSE,
+    'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'module' => 'hs_taxonomy',
+      'settings' => array(),
+      'type' => 'taxonomy_hs',
+      'weight' => 38,
+    ),
   );
 
   // Exported field_instance: 'node-admission_event-field_event_date'
@@ -995,7 +1035,7 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
       'module' => 'hs_taxonomy',
       'settings' => array(),
       'type' => 'taxonomy_hs',
-      'weight' => 7,
+      'weight' => 13,
     ),
     'workbench_access_field' => 0,
   );
@@ -1284,6 +1324,7 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
   t('Dek');
   t('Detail page');
   t('Event Location');
+  t('Event Type');
   t('Keywords');
   t('More Information URL');
   t('Region');
