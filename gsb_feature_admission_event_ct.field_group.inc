@@ -285,6 +285,18 @@ function gsb_feature_admission_event_ct_field_group_info() {
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
+  $field_group->identifier = 'group_wrapper_date|node|admission_event|default';
+  $field_group->group_name = 'group_wrapper_date';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'admission_event';
+  $field_group->mode = 'default';
+  $field_group->parent_name = '';
+  $field_group->data = '';
+  $export['group_wrapper_date|node|admission_event|default'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
   $field_group->identifier = 'group_wrapper_event|node|admission_event|form';
   $field_group->group_name = 'group_wrapper_event';
   $field_group->entity_type = 'node';
