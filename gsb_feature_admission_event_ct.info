@@ -35,6 +35,7 @@ features[field_group][] = group_locations|node|admission_event|form
 features[field_group][] = group_registration|node|admission_event|form
 features[field_group][] = group_schedule|node|admission_event|form
 features[field_group][] = group_speakers|node|admission_event|form
+features[field_group][] = group_wrapper_date|node|admission_event|default
 features[field_group][] = group_wrapper_event|node|admission_event|form
 features[field_instance][] = node-admission_event-field_body
 features[field_instance][] = node-admission_event-field_business_insight_topic
