@@ -351,6 +351,24 @@ function gsb_feature_admission_event_ct_ds_field_settings_info() {
   $ds_fieldsetting->bundle = 'admission_event';
   $ds_fieldsetting->view_mode = 'expanded';
   $ds_fieldsetting->settings = array(
+    'full_location' => array(
+      'weight' => '6',
+      'label' => 'hidden',
+      'format' => 'default',
+      'formatter_settings' => array(
+        'ft' => array(
+          'func' => 'theme_ds_field_expert',
+        ),
+        'conditions' => array(
+          0 => array(
+            'condition' => 'hide_if_empty',
+            'configuration' => array(
+              'target' => 'field_event_location',
+            ),
+          ),
+        ),
+      ),
+    ),
     'title' => array(
       'weight' => '1',
       'label' => 'hidden',
@@ -369,6 +387,19 @@ function gsb_feature_admission_event_ct_ds_field_settings_info() {
           'ow-def-at' => FALSE,
         ),
         'conditions' => array(),
+      ),
+    ),
+    'field_body' => array(
+      'formatter_settings' => array(
+        'ft' => array(
+          'func' => 'theme_ds_field_expert',
+          'ow' => TRUE,
+          'ow-el' => 'div',
+          'ow-cl' => '',
+          'ow-def-cl' => TRUE,
+          'ow-at' => '',
+          'ow-def-at' => FALSE,
+        ),
       ),
     ),
     'field_editorial_summary' => array(
@@ -397,10 +428,72 @@ function gsb_feature_admission_event_ct_ds_field_settings_info() {
         ),
       ),
     ),
+    'field_register_url' => array(
+      'formatter_settings' => array(
+        'ft' => array(
+          'func' => 'theme_ds_field_expert',
+          'lb' => 'Register',
+          'ow' => TRUE,
+          'ow-el' => 'div',
+          'ow-cl' => '',
+          'ow-def-cl' => TRUE,
+          'ow-at' => '',
+          'ow-def-at' => FALSE,
+        ),
+      ),
+    ),
     'field_event_location' => array(
       'formatter_settings' => array(
         'ft' => array(
           'func' => 'theme_ds_field_expert',
+          'lb' => 'Location Information',
+          'lb-el' => 'h2',
+          'lb-col' => TRUE,
+          'prefix' => '<span id="full-location"></span>',
+          'ow' => TRUE,
+          'ow-el' => 'div',
+          'ow-cl' => '',
+          'ow-def-cl' => TRUE,
+          'ow-at' => '',
+          'ow-def-at' => FALSE,
+        ),
+      ),
+    ),
+    'field_event_speakers' => array(
+      'formatter_settings' => array(
+        'ft' => array(
+          'func' => 'theme_ds_field_expert',
+          'lb-el' => 'h2',
+          'lb-col' => TRUE,
+          'ow' => TRUE,
+          'ow-el' => 'div',
+          'ow-cl' => '',
+          'ow-def-cl' => TRUE,
+          'ow-at' => '',
+          'ow-def-at' => FALSE,
+        ),
+      ),
+    ),
+    'field_link_event_more_info' => array(
+      'formatter_settings' => array(
+        'ft' => array(
+          'func' => 'theme_ds_field_expert',
+          'lb' => 'Find More Information',
+          'ow' => TRUE,
+          'ow-el' => 'div',
+          'ow-cl' => '',
+          'ow-def-cl' => TRUE,
+          'ow-at' => '',
+          'ow-def-at' => FALSE,
+        ),
+      ),
+    ),
+    'field_schedule' => array(
+      'formatter_settings' => array(
+        'ft' => array(
+          'func' => 'theme_ds_field_expert',
+          'lb-el' => 'h2',
+          'lb-col' => TRUE,
           'ow' => TRUE,
           'ow-el' => 'div',
           'ow-cl' => '',
@@ -437,6 +530,21 @@ function gsb_feature_admission_event_ct_ds_field_settings_info() {
       'formatter_settings' => array(
         'ft' => array(
           'func' => 'theme_ds_field_expert',
+          'ow' => TRUE,
+          'ow-el' => 'span',
+          'ow-cl' => '',
+          'ow-def-cl' => TRUE,
+          'ow-at' => '',
+          'ow-def-at' => FALSE,
+        ),
+      ),
+    ),
+    'field_date_time' => array(
+      'formatter_settings' => array(
+        'ft' => array(
+          'func' => 'theme_ds_field_expert',
+          'lb-el' => 'h3',
+          'lb-col' => TRUE,
           'ow' => TRUE,
           'ow-el' => 'div',
           'ow-cl' => '',

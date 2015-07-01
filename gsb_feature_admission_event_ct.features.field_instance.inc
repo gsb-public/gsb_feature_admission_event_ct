@@ -232,6 +232,7 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
+
   // Exported field_instance: 'node-admission_event-field_date_time'
   $field_instances['node-admission_event-field_date_time'] = array(
     'bundle' => 'admission_event',
@@ -710,7 +711,7 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
           'conditions' => array(),
         ),
         'type' => 'gsb_field_formatter_split_date_format',
-        'weight' => 0,
+        'weight' => 1,
       ),
       'default' => array(
         'label' => 'hidden',
@@ -929,7 +930,7 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
         'weight' => 2,
       ),
       'default' => array(
-        'label' => 'hidden',
+        'label' => 'above',
         'module' => 'field_collection',
         'settings' => array(
           'conditions' => array(),
@@ -2594,7 +2595,7 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
           'conditions' => array(),
         ),
         'type' => 'text_default',
-        'weight' => 17,
+        'weight' => 13,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -2697,7 +2698,7 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 19,
+        'weight' => 27,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -2776,7 +2777,7 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
           'conditions' => array(),
         ),
         'type' => 'tzfield_default',
-        'weight' => 1,
+        'weight' => 2,
       ),
       'idea_story_related' => array(
         'label' => 'hidden',
