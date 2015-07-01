@@ -18,7 +18,7 @@ function gsb_feature_admission_event_ct_field_group_info() {
   $field_group->entity_type = 'node';
   $field_group->bundle = 'admission_event';
   $field_group->mode = 'form';
-  $field_group->parent_name = 'group_wrapper_event';
+  $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Contact Information',
     'weight' => '29',
