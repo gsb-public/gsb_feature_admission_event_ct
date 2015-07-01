@@ -96,6 +96,33 @@ function gsb_feature_admission_event_ct_field_group_info() {
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
+  $field_group->identifier = 'group_event_type|node|admission_event|form';
+  $field_group->group_name = 'group_event_type';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'admission_event';
+  $field_group->mode = 'form';
+  $field_group->parent_name = 'group_wrapper_event';
+  $field_group->data = array(
+    'label' => 'Event Type',
+    'weight' => '31',
+    'children' => array(
+      0 => 'field_event_category',
+    ),
+    'format_type' => 'tab',
+    'format_settings' => array(
+      'formatter' => 'closed',
+      'instance_settings' => array(
+        'description' => '',
+        'classes' => '',
+        'required_fields' => 1,
+      ),
+    ),
+  );
+  $export['group_event_type|node|admission_event|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
   $field_group->identifier = 'group_keywords|node|admission_event|form';
   $field_group->group_name = 'group_keywords';
   $field_group->entity_type = 'node';
