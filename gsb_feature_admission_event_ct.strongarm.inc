@@ -186,6 +186,47 @@ function gsb_feature_admission_event_ct_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'panelizer_node:admission_event_allowed_layouts';
+  $strongarm->value = 'O:22:"panels_allowed_layouts":4:{s:9:"allow_new";b:1;s:11:"module_name";s:30:"panelizer_node:admission_event";s:23:"allowed_layout_settings";a:18:{s:8:"flexible";b:1;s:14:"twocol_stacked";b:1;s:13:"twocol_bricks";b:1;s:6:"twocol";b:1;s:25:"threecol_33_34_33_stacked";b:1;s:17:"threecol_33_34_33";b:1;s:25:"threecol_25_50_25_stacked";b:1;s:17:"threecol_25_50_25";b:1;s:6:"onecol";b:1;s:26:"minipanel-two-columns-wide";b:1;s:20:"minipanel-one-column";b:1;s:21:"gsb-standard-page-two";b:1;s:29:"gsb-landing-standard-page-one";b:1;s:18:"gsb-landing-events";b:1;s:14:"gsb-insights-c";b:1;s:14:"gsb-insights-b";b:1;s:14:"gsb-insights-a";b:1;s:14:"gsb-front-page";b:1;}s:10:"form_state";N;}';
+  $export['panelizer_node:admission_event_allowed_layouts'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'panelizer_node:admission_event_allowed_layouts_default';
+  $strongarm->value = 0;
+  $export['panelizer_node:admission_event_allowed_layouts_default'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'panelizer_node:admission_event_allowed_types_default';
+  $strongarm->value = 1;
+  $export['panelizer_node:admission_event_allowed_types_default'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'panelizer_node:admission_event_default';
+  $strongarm->value = array(
+    'token' => 'token',
+    'entity_form_field' => 'entity_form_field',
+    'entity_field' => 'entity_field',
+    'entity_field_extra' => 'entity_field_extra',
+    'custom' => 'custom',
+    'block' => 'block',
+    'entity_view' => 'entity_view',
+    'fieldable_panels_pane' => 'fieldable_panels_pane',
+    'menu_tree' => 'menu_tree',
+    'panels_mini' => 'panels_mini',
+    'views_panes' => 'views_panes',
+    'other' => 'other',
+  );
+  $export['panelizer_node:admission_event_default'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'workbench_access_node_type_admission_event';
   $strongarm->value = 1;
   $export['workbench_access_node_type_admission_event'] = $strongarm;
