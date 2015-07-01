@@ -36,7 +36,6 @@ features[field_group][] = group_speakers|node|admission_event|form
 features[field_group][] = group_wrapper_event|node|admission_event|form
 features[field_instance][] = node-admission_event-field_body
 features[field_instance][] = node-admission_event-field_business_insight_topic
-features[field_instance][] = node-admission_event-field_date
 features[field_instance][] = node-admission_event-field_date_time
 features[field_instance][] = node-admission_event-field_editorial_summary
 features[field_instance][] = node-admission_event-field_email

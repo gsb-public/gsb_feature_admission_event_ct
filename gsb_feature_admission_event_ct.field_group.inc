@@ -18,13 +18,11 @@ function gsb_feature_admission_event_ct_field_group_info() {
   $field_group->entity_type = 'node';
   $field_group->bundle = 'admission_event';
   $field_group->mode = 'form';
-  $field_group->parent_name = 'group_wrapper_event';
+  $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Additional Topics',
-    'weight' => '29',
-    'children' => array(
-      0 => 'field_business_insight_topic',
-    ),
+    'weight' => '13',
+    'children' => array(),
     'format_type' => 'tab',
     'format_settings' => array(
       'formatter' => 'closed',
@@ -50,9 +48,9 @@ function gsb_feature_admission_event_ct_field_group_info() {
     'label' => 'Contact Information',
     'weight' => '29',
     'children' => array(
-      0 => 'field_person_title',
-      1 => 'field_email',
-      2 => 'field_person_ref',
+      0 => 'field_email',
+      1 => 'field_person_ref',
+      2 => 'field_person_title',
     ),
     'format_type' => 'tab',
     'format_settings' => array(
@@ -214,9 +212,9 @@ function gsb_feature_admission_event_ct_field_group_info() {
     'label' => 'Registration',
     'weight' => '27',
     'children' => array(
-      0 => 'field_link_event_more_info',
-      1 => 'field_register_url',
-      2 => 'field_date_time',
+      0 => 'field_register_url',
+      1 => 'field_date_time',
+      2 => 'field_link_event_more_info',
     ),
     'format_type' => 'tab',
     'format_settings' => array(
@@ -297,12 +295,12 @@ function gsb_feature_admission_event_ct_field_group_info() {
     'label' => 'Event',
     'weight' => '8',
     'children' => array(
-      0 => 'group_event_type',
-      1 => 'group_region',
-      2 => 'group_contact',
-      3 => 'group_description',
-      4 => 'group_keywords',
-      5 => 'group_locations',
+      0 => 'group_contact',
+      1 => 'group_description',
+      2 => 'group_event_type',
+      3 => 'group_keywords',
+      4 => 'group_locations',
+      5 => 'group_region',
       6 => 'group_registration',
       7 => 'group_schedule',
       8 => 'group_speakers',
