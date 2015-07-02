@@ -116,52 +116,6 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance:
-  // 'node-admission_event-field_business_insight_topic'
-  $field_instances['node-admission_event-field_business_insight_topic'] = array(
-    'bundle' => 'admission_event',
-    'custom_add_another' => '',
-    'custom_remove' => '',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'taxonomy',
-        'settings' => array(
-          'conditions' => array(),
-        ),
-        'type' => 'taxonomy_term_reference_link',
-        'weight' => 21,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'ds_extras_field_template' => '',
-    'entity_type' => 'node',
-    'field_name' => 'field_business_insight_topic',
-    'label' => 'Additional Topics',
-    'required' => 0,
-    'settings' => array(
-      'custom_add_another' => '',
-      'custom_remove' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'hs_taxonomy',
-      'settings' => array(),
-      'type' => 'taxonomy_hs',
-      'weight' => 7,
-    ),
-    'workbench_access_field' => 0,
-  );
-
   // Exported field_instance: 'node-admission_event-field_date_time'
   $field_instances['node-admission_event-field_date_time'] = array(
     'bundle' => 'admission_event',
@@ -1252,7 +1206,6 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('Additional Topics');
   t('Body');
   t('Contact email');
   t('Contact name');
