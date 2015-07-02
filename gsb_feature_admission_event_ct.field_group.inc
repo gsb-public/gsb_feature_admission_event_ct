@@ -291,7 +291,27 @@ function gsb_feature_admission_event_ct_field_group_info() {
   $field_group->bundle = 'admission_event';
   $field_group->mode = 'default';
   $field_group->parent_name = '';
-  $field_group->data = '';
+  $field_group->data = array(
+    'label' => 'Date wrapper',
+    'weight' => '0',
+    'children' => array(
+      0 => 'field_event_date',
+      1 => 'field_time_zone',
+    ),
+    'format_type' => 'div',
+    'format_settings' => array(
+      'label' => 'Date wrapper',
+      'instance_settings' => array(
+        'classes' => '',
+        'description' => '',
+        'show_label' => '0',
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'none',
+      ),
+      'formatter' => 'open',
+    ),
+  );
   $export['group_wrapper_date|node|admission_event|default'] = $field_group;
 
   $field_group = new stdClass();
