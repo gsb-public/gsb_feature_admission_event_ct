@@ -46,6 +46,9 @@
        $(document).ready(function() {
           $("[id^=edit-field-event-detail-und-]").change(function () {
             cleanupFieldsets($(this).val());
+            if ($('#edit-field-event-detail-und-1').is(':checked')) {
+              $("label[for=edit-field-link-single-und-0-attributes-target]").children().hide();
+            }
           });
        });
     }
