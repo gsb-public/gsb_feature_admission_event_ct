@@ -13,31 +13,6 @@ function gsb_feature_admission_event_ct_field_group_info() {
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
-  $field_group->identifier = 'group_additional_topics|node|admission_event|form';
-  $field_group->group_name = 'group_additional_topics';
-  $field_group->entity_type = 'node';
-  $field_group->bundle = 'admission_event';
-  $field_group->mode = 'form';
-  $field_group->parent_name = '';
-  $field_group->data = array(
-    'label' => 'Additional Topics',
-    'weight' => '13',
-    'children' => array(),
-    'format_type' => 'tab',
-    'format_settings' => array(
-      'formatter' => 'closed',
-      'instance_settings' => array(
-        'description' => '',
-        'classes' => '',
-        'required_fields' => 1,
-      ),
-    ),
-  );
-  $export['group_additional_topics|node|admission_event|form'] = $field_group;
-
-  $field_group = new stdClass();
-  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
-  $field_group->api_version = 1;
   $field_group->identifier = 'group_contact|node|admission_event|form';
   $field_group->group_name = 'group_contact';
   $field_group->entity_type = 'node';
