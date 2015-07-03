@@ -116,7 +116,6 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-
   // Exported field_instance: 'node-admission_event-field_date_time'
   $field_instances['node-admission_event-field_date_time'] = array(
     'bundle' => 'admission_event',
@@ -155,7 +154,7 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
     'settings' => array(
       'custom_add_another' => '',
       'custom_remove' => '',
-      'default_value' => 'now',
+      'default_value' => 'blank',
       'default_value2' => 'same',
       'default_value_code' => '',
       'default_value_code2' => '',
@@ -1328,11 +1327,13 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
     ),
     'widget' => array(
       'module' => 'tzfield',
-        'settings' => array(
-          'size' => 60,
+      'settings' => array(
+        'size' => 60,
         'type' => 'tzfield_autocomplete',
         'weight' => 6,
       ),
+      'type' => 'tzfield_autocomplete',
+      'weight' => 6,
     ),
     'workbench_access_field' => 0,
   );
