@@ -1328,10 +1328,11 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
     ),
     'widget' => array(
       'module' => 'tzfield',
-      'settings' => array(
-        'size' => 60,
-      'type' => 'tzfield_autocomplete',
-      'weight' => 6,
+        'settings' => array(
+          'size' => 60,
+        'type' => 'tzfield_autocomplete',
+        'weight' => 6,
+      ),
     ),
     'workbench_access_field' => 0,
   );
