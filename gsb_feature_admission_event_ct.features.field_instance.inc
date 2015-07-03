@@ -26,7 +26,7 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
           'conditions' => array(),
         ),
         'type' => 'text_default',
-        'weight' => 7,
+        'weight' => 13,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -38,7 +38,7 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
     'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_body',
-    'label' => 'Body',
+    'label' => 'Description',
     'required' => 0,
     'settings' => array(
       'better_formats' => array(
@@ -138,7 +138,7 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
           'show_repeat_rule' => 'show',
         ),
         'type' => 'date_default',
-        'weight' => 9,
+        'weight' => 19,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -207,7 +207,7 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
           'trim_type' => 'chars',
         ),
         'type' => 'smart_trim_format',
-        'weight' => 5,
+        'weight' => 11,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -292,7 +292,7 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 6,
+      'weight' => 7,
     ),
     'workbench_access_field' => 0,
   );
@@ -310,7 +310,7 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 23,
+        'weight' => 17,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -322,7 +322,7 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
     'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_email',
-    'label' => 'Contact email',
+    'label' => 'Email',
     'required' => 0,
     'settings' => array(
       'allow_without_formatter' => 0,
@@ -423,7 +423,7 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
       'module' => 'date',
       'settings' => array(
         'display_all_day' => 1,
-        'increment' => 15,
+        'increment' => 5,
         'input_format' => 'M j Y - g:i:sa',
         'input_format_custom' => '',
         'label_position' => 'above',
@@ -432,7 +432,7 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
         'year_range' => '-3:+3',
       ),
       'type' => 'date_popup',
-      'weight' => 4,
+      'weight' => 5,
     ),
     'workbench_access_field' => 0,
   );
@@ -466,7 +466,7 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
     'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_event_detail',
-    'label' => 'Detail page',
+    'label' => 'Detail Page',
     'required' => 1,
     'settings' => array(
       'checkall' => array(
@@ -486,7 +486,7 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
         'checkall' => FALSE,
       ),
       'type' => 'options_buttons',
-      'weight' => 1,
+      'weight' => 2,
     ),
     'workbench_access_field' => 0,
   );
@@ -713,7 +713,57 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 3,
+      'weight' => 4,
+    ),
+    'workbench_access_field' => 0,
+  );
+
+  // Exported field_instance: 'node-admission_event-field_pathauto_title_alias'
+  $field_instances['node-admission_event-field_pathauto_title_alias'] = array(
+    'bundle' => 'admission_event',
+    'custom_add_another' => '',
+    'custom_remove' => '',
+    'default_value' => array(
+      0 => array(
+        'use_autogenerate' => 1,
+        'alias' => '',
+      ),
+    ),
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'pathauto_title_alias',
+        'settings' => array(
+          'conditions' => array(),
+        ),
+        'type' => 'pathauto_title_alias_default',
+        'weight' => 24,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'node',
+    'field_name' => 'field_pathauto_title_alias',
+    'label' => 'URL Alias',
+    'required' => FALSE,
+    'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'pathauto_title_alias',
+      'settings' => array(),
+      'type' => 'pathauto_title_alias_form',
+      'weight' => 9,
     ),
     'workbench_access_field' => 0,
   );
@@ -743,7 +793,7 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
     'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_person_ref',
-    'label' => 'Contact name',
+    'label' => 'Contact Name',
     'required' => 0,
     'settings' => array(
       'custom_add_another' => '',
@@ -789,7 +839,7 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
     'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_person_title',
-    'label' => 'Contact title and department',
+    'label' => 'Title & Department',
     'required' => 0,
     'settings' => array(
       'better_formats' => array(
@@ -992,7 +1042,7 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
           'conditions' => array(),
         ),
         'type' => 'text_default',
-        'weight' => 13,
+        'weight' => 18,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1082,6 +1132,115 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
+  // Exported field_instance: 'node-admission_event-field_search_field'
+  $field_instances['node-admission_event-field_search_field'] = array(
+    'bundle' => 'admission_event',
+    'custom_add_another' => '',
+    'custom_remove' => '',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'concat_field',
+        'settings' => array(
+          'conditions' => array(),
+        ),
+        'type' => 'concat_field_blank',
+        'weight' => 26,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'node',
+    'field_name' => 'field_search_field',
+    'label' => 'Search field',
+    'required' => 0,
+    'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
+      'selected_fields' => array(
+        'concat_field_entity_label' => 'concat_field_entity_label',
+        'field_body' => 'field_body',
+        'field_date_time' => 0,
+        'field_editorial_summary' => 'field_editorial_summary',
+        'field_email' => 'field_email',
+        'field_event_category' => 0,
+        'field_event_date' => 'field_event_date',
+        'field_event_detail' => 0,
+        'field_event_location' => 0,
+        'field_event_speakers' => 'field_event_speakers',
+        'field_link_event_more_info' => 0,
+        'field_link_single' => 0,
+        'field_pathauto_title_alias' => 0,
+        'field_person_ref' => 'field_person_ref',
+        'field_person_title' => 'field_person_title',
+        'field_region' => 0,
+        'field_register_url' => 0,
+        'field_schedule' => 'field_schedule',
+        'field_submit' => 0,
+        'field_tag' => 0,
+        'field_time_zone' => 0,
+      ),
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'concat_field',
+      'settings' => array(),
+      'type' => 'concat_field_default',
+      'weight' => 14,
+    ),
+    'workbench_access_field' => 0,
+  );
+
+  // Exported field_instance: 'node-admission_event-field_submit'
+  $field_instances['node-admission_event-field_submit'] = array(
+    'bundle' => 'admission_event',
+    'custom_add_another' => '',
+    'custom_remove' => '',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => NULL,
+        'settings' => array(),
+        'type' => 'submit_field_default',
+        'weight' => 25,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'node',
+    'field_name' => 'field_submit',
+    'label' => 'Submit',
+    'required' => 0,
+    'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'submit_field',
+      'settings' => array(),
+      'type' => 'submit_field',
+      'weight' => 0,
+    ),
+    'workbench_access_field' => 0,
+  );
+
   // Exported field_instance: 'node-admission_event-field_tag'
   $field_instances['node-admission_event-field_tag'] = array(
     'bundle' => 'admission_event',
@@ -1159,7 +1318,7 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
     'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_time_zone',
-    'label' => 'Timezone dropdown',
+    'label' => 'Time Zone',
     'required' => 0,
     'settings' => array(
       'custom_add_another' => '',
@@ -1168,24 +1327,23 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
       'user_register_form' => FALSE,
     ),
     'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_select',
-      'weight' => 5,
+      'module' => 'tzfield',
+      'settings' => array(
+        'size' => 60,
+      'type' => 'tzfield_autocomplete',
+      'weight' => 6,
     ),
     'workbench_access_field' => 0,
   );
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('Body');
-  t('Contact email');
-  t('Contact name');
-  t('Contact title and department');
+  t('Contact Name');
   t('Date');
   t('Dek');
-  t('Detail page');
+  t('Description');
+  t('Detail Page');
+  t('Email');
   t('Event Location');
   t('Event Type');
   t('Keywords');
@@ -1194,9 +1352,13 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
   t('Registration Deadline');
   t('Registration URL');
   t('Schedule');
+  t('Search field');
   t('Speaker(s)');
-  t('Timezone dropdown');
+  t('Submit');
+  t('Time Zone');
+  t('Title & Department');
   t('URL');
+  t('URL Alias');
 
   return $field_instances;
 }
