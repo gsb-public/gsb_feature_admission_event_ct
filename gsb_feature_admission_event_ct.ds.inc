@@ -17,8 +17,8 @@ function gsb_feature_admission_event_ct_ds_field_settings_info() {
   $ds_fieldsetting->bundle = 'admission_event';
   $ds_fieldsetting->view_mode = 'default';
   $ds_fieldsetting->settings = array(
-    'full_location' => array(
-      'weight' => '6',
+    'event_location_link' => array(
+      'weight' => '3',
       'label' => 'hidden',
       'format' => 'default',
       'formatter_settings' => array(
@@ -36,7 +36,7 @@ function gsb_feature_admission_event_ct_ds_field_settings_info() {
       ),
     ),
     'title' => array(
-      'weight' => '3',
+      'weight' => '1',
       'label' => 'hidden',
       'format' => 'default',
       'formatter_settings' => array(
@@ -68,6 +68,21 @@ function gsb_feature_admission_event_ct_ds_field_settings_info() {
         ),
       ),
     ),
+    'field_date_time' => array(
+      'formatter_settings' => array(
+        'ft' => array(
+          'func' => 'theme_ds_field_expert',
+          'lb-el' => 'h3',
+          'lb-col' => TRUE,
+          'ow' => TRUE,
+          'ow-el' => 'div',
+          'ow-cl' => '',
+          'ow-def-cl' => TRUE,
+          'ow-at' => '',
+          'ow-def-at' => FALSE,
+        ),
+      ),
+    ),
     'field_editorial_summary' => array(
       'formatter_settings' => array(
         'ft' => array(
@@ -85,20 +100,6 @@ function gsb_feature_admission_event_ct_ds_field_settings_info() {
       'formatter_settings' => array(
         'ft' => array(
           'func' => 'theme_ds_field_expert',
-          'ow' => TRUE,
-          'ow-el' => 'div',
-          'ow-cl' => '',
-          'ow-def-cl' => TRUE,
-          'ow-at' => '',
-          'ow-def-at' => FALSE,
-        ),
-      ),
-    ),
-    'field_register_url' => array(
-      'formatter_settings' => array(
-        'ft' => array(
-          'func' => 'theme_ds_field_expert',
-          'lb' => 'Register',
           'ow' => TRUE,
           'ow-el' => 'div',
           'ow-cl' => '',
@@ -154,6 +155,20 @@ function gsb_feature_admission_event_ct_ds_field_settings_info() {
         ),
       ),
     ),
+    'field_register_url' => array(
+      'formatter_settings' => array(
+        'ft' => array(
+          'func' => 'theme_ds_field_expert',
+          'lb' => 'Register',
+          'ow' => TRUE,
+          'ow-el' => 'div',
+          'ow-cl' => '',
+          'ow-def-cl' => TRUE,
+          'ow-at' => '',
+          'ow-def-at' => FALSE,
+        ),
+      ),
+    ),
     'field_schedule' => array(
       'formatter_settings' => array(
         'ft' => array(
@@ -175,21 +190,6 @@ function gsb_feature_admission_event_ct_ds_field_settings_info() {
           'func' => 'theme_ds_field_expert',
           'ow' => TRUE,
           'ow-el' => 'span',
-          'ow-cl' => '',
-          'ow-def-cl' => TRUE,
-          'ow-at' => '',
-          'ow-def-at' => FALSE,
-        ),
-      ),
-    ),
-    'field_date_time' => array(
-      'formatter_settings' => array(
-        'ft' => array(
-          'func' => 'theme_ds_field_expert',
-          'lb-el' => 'h3',
-          'lb-col' => TRUE,
-          'ow' => TRUE,
-          'ow-el' => 'div',
           'ow-cl' => '',
           'ow-def-cl' => TRUE,
           'ow-at' => '',
@@ -221,10 +221,10 @@ function gsb_feature_admission_event_ct_ds_layout_settings_info() {
       'ds_content' => array(
         0 => 'group_wrapper_date',
         1 => 'field_event_date',
-        2 => 'field_time_zone',
-        3 => 'title',
-        4 => 'field_editorial_summary',
-        5 => 'full_location',
+        2 => 'title',
+        3 => 'field_editorial_summary',
+        4 => 'field_time_zone',
+        5 => 'event_location_link',
         6 => 'field_body',
         7 => 'field_event_speakers',
         8 => 'field_date_time',
@@ -237,10 +237,10 @@ function gsb_feature_admission_event_ct_ds_layout_settings_info() {
     'fields' => array(
       'group_wrapper_date' => 'ds_content',
       'field_event_date' => 'ds_content',
-      'field_time_zone' => 'ds_content',
       'title' => 'ds_content',
       'field_editorial_summary' => 'ds_content',
-      'full_location' => 'ds_content',
+      'field_time_zone' => 'ds_content',
+      'event_location_link' => 'ds_content',
       'field_body' => 'ds_content',
       'field_event_speakers' => 'ds_content',
       'field_date_time' => 'ds_content',
