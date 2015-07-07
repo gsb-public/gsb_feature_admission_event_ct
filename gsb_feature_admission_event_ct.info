@@ -14,6 +14,7 @@ dependencies[] = features
 dependencies[] = field_collection
 dependencies[] = field_group
 dependencies[] = gsb_feature_base_fields
+dependencies[] = gsb_feature_event_ct
 dependencies[] = gsb_field_formatter
 dependencies[] = hs_taxonomy
 dependencies[] = link

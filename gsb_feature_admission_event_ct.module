@@ -7,6 +7,25 @@
 include_once 'gsb_feature_admission_event_ct.features.inc';
 
 /**
+ * Implements hook_ctools_plugin_directory().
+ */
+function gsb_feature_admission_event_ct_ctools_plugin_directory($module, $plugin) {
+  if ($module == 'addressfield') {
+    return 'plugins/' . $plugin;
+  }
+}
+
+/**
+ * Implements hook_ctools_plugin_type().
+ */
+function gsb_feature_admission_event_ct_ctools_plugin_type() {
+  $plugins['format'] = array(
+    'load themes' => TRUE,
+  );
+  return $plugins;
+}
+
+/**
  * Implements hook_form_FORM_ID_alter().
  */
 function gsb_feature_admission_event_ct_form_admission_event_node_form_alter(&$form, &$form_state, $form_id) {
@@ -19,10 +38,6 @@ function gsb_feature_admission_event_ct_form_admission_event_node_form_alter(&$f
   // make address field not required and add conditional visibility
   foreach ($form['field_event_location'][$language] as $key => $value) {
     if (is_numeric($key) && $key >= 0) {
-      $form['field_event_location'][$language][$key]['field_address'][$language][0]['street_block']['thoroughfare']['#required'] = FALSE;
-      $form['field_event_location'][$language][$key]['field_address'][$language][0]['locality_block']['administrative_area']['#required'] = FALSE;
-      $form['field_event_location'][$language][$key]['field_address'][$language][0]['locality_block']['locality']['#required'] = FALSE;
-      $form['field_event_location'][$language][$key]['field_address'][$language][0]['locality_block']['postal_code']['#required'] = FALSE;
 
       $form['field_event_location'][$language][$key]['field_address']['#states'] = array(
         'invisible' => array(
@@ -32,28 +47,6 @@ function gsb_feature_admission_event_ct_form_admission_event_node_form_alter(&$f
       $form['field_event_location'][$language][$key]['field_link_map']['#states'] = array(
         'invisible' => array(
           ':input[name="field_event_location[und][' . $key . '][field_event_location_type][' . $language . ']"]' => array('value' => (string)'Online'),
-        )
-      );
-
-      // Add requred marker based on event type
-      $form['field_event_location'][$language][$key]['field_address'][$language][0]['street_block']['thoroughfare']['#states'] = array(
-        'required' => array(
-          ':input[name="field_event_location[und][' . $key . '][field_event_location_type][' . $language . ']"]' => array('!value' => (string)'Online'),
-        )
-      );
-      $form['field_event_location'][$language][$key]['field_address'][$language][0]['locality_block']['administrative_area']['#states'] = array(
-        'required' => array(
-          ':input[name="field_event_location[und][' . $key . '][field_event_location_type][' . $language . ']"]' => array('!value' => (string)'Online'),
-        )
-      );
-      $form['field_event_location'][$language][$key]['field_address'][$language][0]['locality_block']['locality']['#states'] = array(
-        'required' => array(
-          ':input[name="field_event_location[und][' . $key . '][field_event_location_type][' . $language . ']"]' => array('!value' => (string)'Online'),
-        )
-      );
-      $form['field_event_location'][$language][$key]['field_address'][$language][0]['locality_block']['postal_code']['#states'] = array(
-        'required' => array(
-          ':input[name="field_event_location[und][' . $key . '][field_event_location_type][' . $language . ']"]' => array('!value' => (string)'Online'),
         )
       );
 
@@ -173,30 +166,6 @@ function gsb_feature_admission_event_ct_form_validate($form, &$form_state) {
     if (empty($values['field_body'][$language][0]['value'])) {
       $field_label = $form['field_body'][$language]['#title'];
       form_set_error('field_body]['.$language.'][0][value', $field_label . ' field is required.');
-    }
-  }
-
-  // Validate the address field based on event type
-  foreach ($form_state['values']['field_event_location'][$language] as $key => $value) {
-    if (is_numeric($key) && $key >= 0) {
-      if ($values['field_event_location'][$language][$key]['field_event_location_type'][$language][0]['value'] != 'Online') {
-        if (empty($values['field_event_location'][$language][$key]['field_address'][$language][0]['thoroughfare'])) {
-          $field_label = 'Address 1';
-          form_set_error('field_event_location]['.$language.']['.$key.'][field_address]['.$language.'][0][thoroughfare', $field_label . ' field is required.');
-        }
-        if (empty($values['field_event_location'][$language][$key]['field_address'][$language][0]['administrative_area'])) {
-          $field_label = 'State';
-          form_set_error('field_event_location]['.$language.']['.$key.'][field_address]['.$language.'][0][administrative_area', $field_label . ' field is required.');
-        }
-        if (empty($values['field_event_location'][$language][$key]['field_address'][$language][0]['locality'])) {
-          $field_label = 'City';
-          form_set_error('field_event_location]['.$language.']['.$key.'][field_address]['.$language.'][0][locality', $field_label . ' field is required.');
-        }
-        if (empty($values['field_event_location'][$language][$key]['field_address'][$language][0]['postal_code'])) {
-          $field_label = 'Zip Code';
-          form_set_error('field_event_location]['.$language.']['.$key.'][field_address]['.$language.'][0][postal_code', $field_label . ' field is required.');
-        }
-      }
     }
   }
 }
