@@ -15,6 +15,8 @@ function gsb_feature_admission_event_ct_form_admission_event_node_form_alter(&$f
     return;
   }
 
+  $form['field_item_id']['#access'] = FALSE;
+
   $language = $form['language']['#value'];
   // make address field not required and add conditional visibility
   foreach ($form['field_event_location'][$language] as $key => $value) {
