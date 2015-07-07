@@ -247,29 +247,5 @@ function gsb_feature_admission_event_ct_form_validate($form, &$form_state) {
       form_set_error('field_body]['.$language.'][0][value', $field_label . ' field is required.');
     }
   }
-
-  // Validate the address field based on event type
-  foreach ($form_state['values']['field_event_location'][$language] as $key => $value) {
-    if (is_numeric($key) && $key >= 0) {
-      if ($values['field_event_location'][$language][$key]['field_event_location_type'][$language][0]['value'] != 'Online') {
-        if (empty($values['field_event_location'][$language][$key]['field_address'][$language][0]['thoroughfare'])) {
-          $field_label = 'Address 1';
-          form_set_error('field_event_location]['.$language.']['.$key.'][field_address]['.$language.'][0][thoroughfare', $field_label . ' field is required.');
-        }
-        if (empty($values['field_event_location'][$language][$key]['field_address'][$language][0]['administrative_area'])) {
-          $field_label = 'State';
-          form_set_error('field_event_location]['.$language.']['.$key.'][field_address]['.$language.'][0][administrative_area', $field_label . ' field is required.');
-        }
-        if (empty($values['field_event_location'][$language][$key]['field_address'][$language][0]['locality'])) {
-          $field_label = 'City';
-          form_set_error('field_event_location]['.$language.']['.$key.'][field_address]['.$language.'][0][locality', $field_label . ' field is required.');
-        }
-        if (empty($values['field_event_location'][$language][$key]['field_address'][$language][0]['postal_code'])) {
-          $field_label = 'Zip Code';
-          form_set_error('field_event_location]['.$language.']['.$key.'][field_address]['.$language.'][0][postal_code', $field_label . ' field is required.');
-        }
-      }
-    }
-  }
 }
 
