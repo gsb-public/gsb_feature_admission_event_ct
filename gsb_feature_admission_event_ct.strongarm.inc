@@ -233,6 +233,13 @@ function gsb_feature_admission_event_ct_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'pathauto_node_admission_event_pattern';
+  $strongarm->value = '[node:field-program-single:field_admission_event_base_path]';
+  $export['pathauto_node_admission_event_pattern'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'workbench_access_node_type_admission_event';
   $strongarm->value = 1;
   $export['workbench_access_node_type_admission_event'] = $strongarm;

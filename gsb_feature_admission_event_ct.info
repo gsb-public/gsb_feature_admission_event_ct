@@ -81,5 +81,6 @@ features[variable][] = panelizer_node:admission_event_allowed_layouts
 features[variable][] = panelizer_node:admission_event_allowed_layouts_default
 features[variable][] = panelizer_node:admission_event_allowed_types_default
 features[variable][] = panelizer_node:admission_event_default
+features[variable][] = pathauto_node_admission_event_pattern
 features[variable][] = workbench_access_node_type_admission_event
 features[variable][] = workbench_moderation_default_state_admission_event
