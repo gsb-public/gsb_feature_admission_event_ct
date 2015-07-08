@@ -26,7 +26,7 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
           'conditions' => array(),
         ),
         'type' => 'text_default',
-        'weight' => 4,
+        'weight' => 13,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -137,7 +137,7 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
           'show_repeat_rule' => 'show',
         ),
         'type' => 'date_default',
-        'weight' => 6,
+        'weight' => 19,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -206,7 +206,7 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
           'trim_type' => 'chars',
         ),
         'type' => 'smart_trim_format',
-        'weight' => 2,
+        'weight' => 11,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -291,7 +291,7 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 7,
+      'weight' => 8,
     ),
     'workbench_access_field' => 0,
   );
@@ -309,7 +309,7 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 18,
+        'weight' => 17,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -353,7 +353,7 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 27,
+        'weight' => 28,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -431,7 +431,7 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
         'year_range' => '-3:+3',
       ),
       'type' => 'date_popup',
-      'weight' => 5,
+      'weight' => 6,
     ),
     'workbench_access_field' => 0,
   );
@@ -453,7 +453,7 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 24,
+        'weight' => 25,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -485,7 +485,7 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
         'checkall' => FALSE,
       ),
       'type' => 'options_buttons',
-      'weight' => 2,
+      'weight' => 3,
     ),
     'workbench_access_field' => 0,
   );
@@ -507,7 +507,7 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
           'view_mode' => 'full',
         ),
         'type' => 'field_collection_fields',
-        'weight' => 9,
+        'weight' => 12,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -553,7 +553,7 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
           'view_mode' => 'full',
         ),
         'type' => 'field_collection_fields',
-        'weight' => 5,
+        'weight' => 8,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -598,7 +598,7 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
           'conditions' => array(),
         ),
         'type' => 'link_label',
-        'weight' => 8,
+        'weight' => 11,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -664,7 +664,7 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 17,
+        'weight' => 4,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -712,7 +712,7 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 4,
+      'weight' => 5,
     ),
     'workbench_access_field' => 0,
   );
@@ -735,7 +735,7 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 22,
+        'weight' => 24,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -759,7 +759,7 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
       'module' => 'pathauto_title_alias',
       'settings' => array(),
       'type' => 'pathauto_title_alias_form',
-      'weight' => 9,
+      'weight' => 10,
     ),
     'workbench_access_field' => 0,
   );
@@ -777,7 +777,7 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 21,
+        'weight' => 24,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -823,7 +823,7 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 20,
+        'weight' => 22,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -911,6 +911,52 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
+  // Exported field_instance: 'node-admission_event-field_program_single'
+  $field_instances['node-admission_event-field_program_single'] = array(
+    'bundle' => 'admission_event',
+    'custom_add_another' => '',
+    'custom_remove' => '',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(
+          'conditions' => array(),
+        ),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 30,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'node',
+    'field_name' => 'field_program_single',
+    'label' => 'Program',
+    'required' => 0,
+    'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
+      'use_hierarchical_select_lite' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 2,
+    ),
+    'workbench_access_field' => 0,
+  );
+
   // Exported field_instance: 'node-admission_event-field_region'
   $field_instances['node-admission_event-field_region'] = array(
     'bundle' => 'admission_event',
@@ -924,7 +970,7 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 19,
+        'weight' => 21,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -969,7 +1015,7 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
           'conditions' => array(),
         ),
         'type' => 'link_label',
-        'weight' => 7,
+        'weight' => 10,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1038,7 +1084,7 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
           'conditions' => array(),
         ),
         'type' => 'text_default',
-        'weight' => 10,
+        'weight' => 18,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1140,7 +1186,7 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 25,
+        'weight' => 26,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1204,7 +1250,7 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 23,
+        'weight' => 25,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1246,7 +1292,7 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 26,
+        'weight' => 27,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1326,7 +1372,7 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
         'weight' => 6,
       ),
       'type' => 'tzfield_autocomplete',
-      'weight' => 6,
+      'weight' => 7,
     ),
     'workbench_access_field' => 0,
   );
@@ -1343,6 +1389,7 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
   t('Event Type');
   t('Keywords');
   t('More Information URL');
+  t('Program');
   t('Region');
   t('Registration Deadline');
   t('Registration URL');
