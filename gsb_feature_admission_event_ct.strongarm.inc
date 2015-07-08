@@ -234,7 +234,7 @@ function gsb_feature_admission_event_ct_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'pathauto_node_admission_event_pattern';
-  $strongarm->value = '[node:field-program-single:field_admission_event_base_path]';
+  $strongarm->value = '[node:field-program-single:field_admission_event_base_path]/[node:title]';
   $export['pathauto_node_admission_event_pattern'] = $strongarm;
 
   $strongarm = new stdClass();
