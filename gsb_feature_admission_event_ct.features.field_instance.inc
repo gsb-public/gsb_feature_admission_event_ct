@@ -1108,8 +1108,9 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
           'image_resource_caption' => 0,
           'image_text_equivalent' => 0,
           'markdown' => 0,
+          'markdown_lite_minus_resources' => 'markdown_lite_minus_resources',
           'plain_text' => 0,
-          'sidebar' => 'sidebar',
+          'sidebar' => 0,
           'slideshow' => 0,
         ),
         'allowed_formats_toggle' => 1,
@@ -1135,6 +1136,9 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
               'weight' => 0,
             ),
             'markdown' => array(
+              'weight' => 0,
+            ),
+           'markdown_lite_minus_resources' => array(
               'weight' => 0,
             ),
             'plain_text' => array(
