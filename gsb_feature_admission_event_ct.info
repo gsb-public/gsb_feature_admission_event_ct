@@ -69,6 +69,7 @@ features[field_instance][] = node-admission_event-field_submit
 features[field_instance][] = node-admission_event-field_tag
 features[field_instance][] = node-admission_event-field_time_zone
 features[node][] = admission_event
+features[panelizer_defaults][] = node:admission_event:default
 features[variable][] = field_bundle_settings_node__admission_event
 features[variable][] = menu_options_admission_event
 features[variable][] = menu_parent_admission_event
