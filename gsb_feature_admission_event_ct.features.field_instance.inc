@@ -2652,6 +2652,9 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
             'markdown' => array(
               'weight' => 0,
             ),
+            'markdown_lite_minus_resources' => array(
+              'weight' => 0,
+            ),
             'plain_text' => array(
               'weight' => 10,
             ),
