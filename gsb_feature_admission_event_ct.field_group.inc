@@ -272,6 +272,7 @@ function gsb_feature_admission_event_ct_field_group_info() {
     'children' => array(
       0 => 'field_event_date',
       1 => 'field_time_zone',
+      2 => 'find_local_time',
     ),
     'format_type' => 'div',
     'format_settings' => array(
