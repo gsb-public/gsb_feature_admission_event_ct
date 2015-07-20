@@ -369,6 +369,23 @@ function gsb_feature_admission_event_ct_ds_field_settings_info() {
         ),
       ),
     ),
+    'find_local_time' => array(
+      'weight' => '3',
+      'label' => 'hidden',
+      'format' => 'default',
+      'formatter_settings' => array(
+        'ft' => array(
+          'func' => 'theme_ds_field_expert',
+          'ow' => TRUE,
+          'ow-el' => 'span',
+          'ow-cl' => '',
+          'ow-def-cl' => TRUE,
+          'ow-at' => '',
+          'ow-def-at' => FALSE,
+        ),
+        'conditions' => array(),
+      ),
+    ),
     'title' => array(
       'weight' => '1',
       'label' => 'hidden',
@@ -408,6 +425,7 @@ function gsb_feature_admission_event_ct_ds_field_settings_info() {
           'func' => 'theme_ds_field_expert',
           'lb-el' => 'h3',
           'lb-col' => TRUE,
+          'suffix' => '<a class="find-time" href="http://timeanddate.com/worldclock/converter.html" target="_blank">Find local time</a>',
           'ow' => TRUE,
           'ow-el' => 'div',
           'ow-cl' => '',
@@ -464,6 +482,7 @@ function gsb_feature_admission_event_ct_ds_field_settings_info() {
       'formatter_settings' => array(
         'ft' => array(
           'func' => 'theme_ds_field_expert',
+          'lb' => 'Speakers',
           'lb-el' => 'h2',
           'lb-col' => TRUE,
           'ow' => TRUE,
@@ -850,11 +869,8 @@ function gsb_feature_admission_event_ct_ds_layout_settings_info() {
       'field_register_time_zone' => 'ds_content',
       'field_register_url' => 'ds_content',
       'field_link_event_more_info' => 'ds_content',
-      'field_editorial_summary' => 'ds_content',
       'field_event_location' => 'ds_content',
-      'field_body' => 'ds_content',
       'field_schedule' => 'ds_content',
-      'field_date_time' => 'ds_content',
     ),
     'classes' => array(),
     'wrappers' => array(

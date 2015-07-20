@@ -38,7 +38,7 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
           'conditions' => array(),
         ),
         'type' => 'text_default',
-        'weight' => 9,
+        'weight' => 4,
       ),
       'main_list' => array(
         'label' => 'hidden',
@@ -272,7 +272,7 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
           'show_repeat_rule' => 'show',
         ),
         'type' => 'date_default',
-        'weight' => 11,
+        'weight' => 6,
       ),
       'main_list' => array(
         'label' => 'above',
@@ -392,7 +392,7 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
           'trim_type' => 'chars',
         ),
         'type' => 'smart_trim_format',
-        'weight' => 7,
+        'weight' => 2,
       ),
       'main_list' => array(
         'label' => 'hidden',
@@ -1079,7 +1079,7 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
           'view_mode' => 'full',
         ),
         'type' => 'field_collection_fields',
-        'weight' => 4,
+        'weight' => 5,
       ),
       'main_list' => array(
         'label' => 'above',
