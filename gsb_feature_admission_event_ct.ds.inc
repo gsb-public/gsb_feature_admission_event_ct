@@ -661,6 +661,42 @@ function gsb_feature_admission_event_ct_ds_field_settings_info() {
 
   $ds_fieldsetting = new stdClass();
   $ds_fieldsetting->api_version = 1;
+  $ds_fieldsetting->id = 'node|admission_event|idea_story_related';
+  $ds_fieldsetting->entity_type = 'node';
+  $ds_fieldsetting->bundle = 'admission_event';
+  $ds_fieldsetting->view_mode = 'idea_story_related';
+  $ds_fieldsetting->settings = array(
+    'field_event_date' => array(
+      'formatter_settings' => array(
+        'ft' => array(
+          'func' => 'theme_ds_field_expert',
+          'ow' => TRUE,
+          'ow-el' => 'div',
+          'ow-cl' => '',
+          'ow-def-cl' => TRUE,
+          'ow-at' => '',
+          'ow-def-at' => FALSE,
+        ),
+      ),
+    ),
+    'field_event_location' => array(
+      'formatter_settings' => array(
+        'ft' => array(
+          'func' => 'theme_ds_field_expert',
+          'ow' => TRUE,
+          'ow-el' => 'div',
+          'ow-cl' => '',
+          'ow-def-cl' => TRUE,
+          'ow-at' => '',
+          'ow-def-at' => FALSE,
+        ),
+      ),
+    ),
+  );
+  $export['node|admission_event|idea_story_related'] = $ds_fieldsetting;
+
+  $ds_fieldsetting = new stdClass();
+  $ds_fieldsetting->api_version = 1;
   $ds_fieldsetting->id = 'node|admission_event|main_list';
   $ds_fieldsetting->entity_type = 'node';
   $ds_fieldsetting->bundle = 'admission_event';
@@ -826,8 +862,8 @@ function gsb_feature_admission_event_ct_ds_layout_settings_info() {
     'regions' => array(
       'ds_content' => array(
         0 => 'group_wrapper_date',
-        1 => 'field_event_date',
-        2 => 'title',
+        1 => 'title',
+        2 => 'field_event_date',
         3 => 'field_time_zone',
         4 => 'field_editorial_summary',
         5 => 'event_location_link',
@@ -844,11 +880,12 @@ function gsb_feature_admission_event_ct_ds_layout_settings_info() {
     ),
     'fields' => array(
       'group_wrapper_date' => 'ds_content',
-      'field_event_date' => 'ds_content',
       'title' => 'ds_content',
+      'field_event_date' => 'ds_content',
       'field_time_zone' => 'ds_content',
       'field_editorial_summary' => 'ds_content',
       'event_location_link' => 'ds_content',
+      'find_local_time' => 'ds_content',
       'field_body' => 'ds_content',
       'find_local_time' => 'ds_content',
       'field_event_speakers' => 'ds_content',
