@@ -253,19 +253,6 @@ function gsb_feature_admission_event_ct_ds_field_settings_info() {
         ),
       ),
     ),
-    'field_editorial_summary' => array(
-      'formatter_settings' => array(
-        'ft' => array(
-          'func' => 'theme_ds_field_expert',
-          'ow' => TRUE,
-          'ow-el' => 'div',
-          'ow-cl' => '',
-          'ow-def-cl' => TRUE,
-          'ow-at' => '',
-          'ow-def-at' => FALSE,
-        ),
-      ),
-    ),
     'field_event_date' => array(
       'formatter_settings' => array(
         'ft' => array(
@@ -392,7 +379,6 @@ function gsb_feature_admission_event_ct_ds_layout_settings_info() {
         1 => 'title',
         2 => 'field_link_single',
         3 => 'field_event_location',
-        4 => 'field_editorial_summary',
       ),
     ),
     'fields' => array(
@@ -400,7 +386,6 @@ function gsb_feature_admission_event_ct_ds_layout_settings_info() {
       'title' => 'ds_content',
       'field_link_single' => 'ds_content',
       'field_event_location' => 'ds_content',
-      'field_editorial_summary' => 'ds_content',
     ),
     'classes' => array(),
     'wrappers' => array(
