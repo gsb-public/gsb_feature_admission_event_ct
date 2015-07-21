@@ -59,13 +59,13 @@ function gsb_feature_admission_event_ct_strongarm() {
         'custom_settings' => FALSE,
       ),
       'alumni_featured_content' => array(
-        'custom_settings' => FALSE,
+        'custom_settings' => TRUE,
       ),
       'idea_story_latest_stories' => array(
         'custom_settings' => FALSE,
       ),
       'idea_story_related' => array(
-        'custom_settings' => FALSE,
+        'custom_settings' => TRUE,
       ),
       'idea_story_top_stories' => array(
         'custom_settings' => FALSE,
