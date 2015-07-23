@@ -61,6 +61,7 @@ features[field_instance][] = node-admission_event-field_event_date
 features[field_instance][] = node-admission_event-field_event_detail
 features[field_instance][] = node-admission_event-field_event_location
 features[field_instance][] = node-admission_event-field_event_speakers
+features[field_instance][] = node-admission_event-field_event_status
 features[field_instance][] = node-admission_event-field_item_id
 features[field_instance][] = node-admission_event-field_link_event_more_info
 features[field_instance][] = node-admission_event-field_link_single
