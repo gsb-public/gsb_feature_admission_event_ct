@@ -95,10 +95,10 @@ function gsb_feature_admission_event_ct_strongarm() {
         'custom_settings' => FALSE,
       ),
       'compact' => array(
-        'custom_settings' => FALSE,
+        'custom_settings' => TRUE,
       ),
       'expanded' => array(
-        'custom_settings' => FALSE,
+        'custom_settings' => TRUE,
       ),
       'main_list' => array(
         'custom_settings' => TRUE,
