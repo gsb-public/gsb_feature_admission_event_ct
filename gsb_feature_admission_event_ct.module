@@ -35,6 +35,7 @@ function gsb_feature_admission_event_ct_form_admission_event_node_form_alter(&$f
   }
 
   $form['field_item_id']['#disabled'] = TRUE;
+  $form['field_calendar_display']['#disabled'] = TRUE;
   $form['field_event_status']['#disabled'] = TRUE;
 
   $language = $form['language']['#value'];
@@ -172,3 +173,4 @@ function gsb_feature_admission_event_ct_form_validate($form, &$form_state) {
     }
   }
 }
+
