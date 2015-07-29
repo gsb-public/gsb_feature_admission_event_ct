@@ -40,6 +40,7 @@
           $("label[for=edit-field-link-single-und-0-attributes-target]").children().hide();
         }
       });
+      $("label[for=edit-field-link-single-und-0-attributes-target]").children().hide();
       // hide vertical tabs
       cleanupFieldsets($("input[type='radio'][name='field_event_detail[und]']:checked").val());
     });
