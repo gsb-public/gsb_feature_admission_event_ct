@@ -148,7 +148,7 @@ function gsb_feature_admission_event_ct_ds_field_settings_info() {
       ),
     ),
     'find_local_time' => array(
-      'weight' => '3',
+      'weight' => '4',
       'label' => 'hidden',
       'format' => 'default',
       'formatter_settings' => array(

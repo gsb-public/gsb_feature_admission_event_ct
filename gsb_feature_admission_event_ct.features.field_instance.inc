@@ -2494,7 +2494,7 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
         'settings' => array(
           'conditions' => array(),
         ),
-        'type' => 'tzfield_default',
+        'type' => 'gsb_field_formatter_time_zone_abbreviated',
         'weight' => 2,
       ),
       'expanded' => array(
