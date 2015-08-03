@@ -190,6 +190,7 @@ function gsb_feature_admission_event_ct_field_group_info() {
       0 => 'field_register_url',
       1 => 'field_date_time',
       2 => 'field_link_event_more_info',
+      3 => 'field_register_time_zone',
     ),
     'format_type' => 'tab',
     'format_settings' => array(
@@ -301,7 +302,7 @@ function gsb_feature_admission_event_ct_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Event',
-    'weight' => '8',
+    'weight' => '9',
     'children' => array(
       0 => 'group_contact',
       1 => 'group_description',
