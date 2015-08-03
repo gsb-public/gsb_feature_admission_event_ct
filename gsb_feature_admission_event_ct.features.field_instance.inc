@@ -781,7 +781,7 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 27,
+        'weight' => 28,
       ),
       'expanded' => array(
         'label' => 'above',
@@ -1013,7 +1013,7 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 23,
+        'weight' => 24,
       ),
       'expanded' => array(
         'label' => 'above',
@@ -3300,7 +3300,7 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 24,
+        'weight' => 25,
       ),
       'expanded' => array(
         'label' => 'above',
@@ -3378,7 +3378,7 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 26,
+        'weight' => 27,
       ),
       'expanded' => array(
         'label' => 'above',

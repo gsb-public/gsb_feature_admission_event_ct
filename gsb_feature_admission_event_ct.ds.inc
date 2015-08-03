@@ -953,7 +953,6 @@ function gsb_feature_admission_event_ct_ds_layout_settings_info() {
       'title' => 'ds_content',
       'field_time_zone' => 'ds_content',
       'field_editorial_summary' => 'ds_content',
-      'find_local_time' => 'ds_content',
       'event_location_link' => 'ds_content',
       'field_body' => 'ds_content',
       'find_local_time' => 'ds_content',
