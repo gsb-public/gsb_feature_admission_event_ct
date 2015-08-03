@@ -3271,7 +3271,7 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
       'module' => 'concat_field',
       'settings' => array(),
       'type' => 'concat_field_default',
-      'weight' => 14,
+      'weight' => 15,
     ),
     'workbench_access_field' => 0,
   );
