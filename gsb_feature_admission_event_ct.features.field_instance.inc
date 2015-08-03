@@ -182,11 +182,8 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
       ),
       'default' => array(
         'label' => 'above',
-        'module' => 'list',
-        'settings' => array(
-          'conditions' => array(),
-        ),
-        'type' => 'list_default',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 32,
       ),
       'expanded' => array(
@@ -549,7 +546,7 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 18,
+        'weight' => 19,
       ),
       'expanded' => array(
         'label' => 'hidden',
@@ -629,7 +626,7 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 27,
+        'weight' => 28,
       ),
       'expanded' => array(
         'label' => 'above',
@@ -837,7 +834,7 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 23,
+        'weight' => 24,
       ),
       'expanded' => array(
         'label' => 'above',
@@ -935,7 +932,7 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
           'view_mode' => 'full',
         ),
         'type' => 'field_collection_fields',
-        'weight' => 9,
+        'weight' => 10,
       ),
       'expanded' => array(
         'label' => 'hidden',
@@ -1117,11 +1114,8 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
       ),
       'default' => array(
         'label' => 'above',
-        'module' => 'list',
-        'settings' => array(
-          'conditions' => array(),
-        ),
-        'type' => 'list_default',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 31,
       ),
       'expanded' => array(
@@ -1195,7 +1189,7 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 28,
+        'weight' => 29,
       ),
       'expanded' => array(
         'label' => 'hidden',
@@ -1335,7 +1329,7 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
           'conditions' => array(),
         ),
         'type' => 'link_label',
-        'weight' => 8,
+        'weight' => 9,
       ),
       'expanded' => array(
         'label' => 'hidden',
@@ -1440,7 +1434,7 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 17,
+        'weight' => 18,
       ),
       'expanded' => array(
         'label' => 'hidden',
@@ -1550,7 +1544,7 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 22,
+        'weight' => 23,
       ),
       'expanded' => array(
         'label' => 'above',
@@ -1628,7 +1622,7 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 21,
+        'weight' => 22,
       ),
       'expanded' => array(
         'label' => 'hidden',
@@ -1710,7 +1704,7 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 20,
+        'weight' => 21,
       ),
       'expanded' => array(
         'label' => 'hidden',
@@ -1847,7 +1841,7 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 29,
+        'weight' => 30,
       ),
       'expanded' => array(
         'label' => 'above',
@@ -1926,7 +1920,7 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 19,
+        'weight' => 20,
       ),
       'expanded' => array(
         'label' => 'hidden',
@@ -2005,13 +1999,13 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
         'weight' => 0,
       ),
       'default' => array(
-        'label' => 'above',
-        'module' => 'tzfield',
+        'label' => 'hidden',
+        'module' => 'gsb_field_formatter',
         'settings' => array(
           'conditions' => array(),
         ),
-        'type' => 'tzfield_default',
-        'weight' => 33,
+        'type' => 'gsb_field_formatter_time_zone_abbreviated',
+        'weight' => 7,
       ),
       'expanded' => array(
         'label' => 'above',
@@ -2088,7 +2082,7 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
           'conditions' => array(),
         ),
         'type' => 'link_label',
-        'weight' => 7,
+        'weight' => 8,
       ),
       'expanded' => array(
         'label' => 'hidden',
@@ -2196,7 +2190,7 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
           'conditions' => array(),
         ),
         'type' => 'text_default',
-        'weight' => 10,
+        'weight' => 11,
       ),
       'expanded' => array(
         'label' => 'above',
@@ -2341,7 +2335,7 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 25,
+        'weight' => 26,
       ),
       'expanded' => array(
         'label' => 'above',
@@ -2446,7 +2440,7 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 24,
+        'weight' => 25,
       ),
       'expanded' => array(
         'label' => 'above',
@@ -2524,7 +2518,7 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 26,
+        'weight' => 27,
       ),
       'expanded' => array(
         'label' => 'above',
