@@ -256,7 +256,7 @@ function gsb_feature_admission_event_ct_ds_field_settings_info() {
       'formatter_settings' => array(
         'ft' => array(
           'func' => 'theme_ds_field_expert',
-          'lb' => 'Location Information',
+          'lb' => 'Location',
           'lb-el' => 'h2',
           'lb-col' => TRUE,
           'prefix' => '<span id="full-location"></span>',
