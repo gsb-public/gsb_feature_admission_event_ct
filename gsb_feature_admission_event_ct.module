@@ -186,48 +186,6 @@ function gsb_feature_admission_event_ct_after_build($form, &$form_state) {
 }
 
 /**
- * gsb_feature_admission_event_ct_after_build().
- */
-function gsb_feature_admission_event_ct_after_build($form, &$form_state) {
-  $language = $form['#language'];
-  foreach ($form[$language] as $key => $value) {
-    if (is_numeric($key) && $key >= 0) {
-
-      // Remove N/A option from feature type and media format radio button
-      unset($form[$language][$key]['field_speakers_person_type'][$language]['#options']['_none']);
-      unset($form[$language][$key]['field_speakers_person_type'][$language]['_none']);
-
-      // Change to apply #states for Speakers to show hide fields
-      $form[$language][$key]['field_first_name']['#states']['invisible'] = array(
-        ':input[name="field_event_speakers[' . $language . '][' . $key . '][field_speakers_person_type][' . $language . ']"]' => array(
-          array('value' => '0'),
-        ),
-      );
-
-      $form[$language][$key]['field_last_name']['#states']['invisible'] = array(
-        ':input[name="field_event_speakers[' . $language . '][' . $key . '][field_speakers_person_type][' . $language . ']"]' => array(
-          array('value' => '0'),
-        ),
-      );
-
-      $form[$language][$key]['field_link_single']['#states']['invisible'] = array(
-        ':input[name="field_event_speakers[' . $language . '][' . $key . '][field_speakers_person_type][' . $language . ']"]' => array(
-          array('value' => '0'),
-        ),
-      );
-
-      $form[$language][$key]['field_person_ref']['#states']['invisible'] = array(
-        ':input[name="field_event_speakers[' . $language . '][' . $key . '][field_speakers_person_type][' . $language . ']"]' => array(
-          array('value' => '1'),
-        ),
-      );
-    }
-  }
-
-  return $form;
-}
-
-/**
  * Validate callback
  *  - Conditionally validate field.
  */
