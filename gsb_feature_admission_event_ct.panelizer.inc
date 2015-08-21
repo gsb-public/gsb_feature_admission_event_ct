@@ -356,4 +356,3 @@ function gsb_feature_admission_event_ct_panelizer_defaults() {
 
   return $export;
 }
-
