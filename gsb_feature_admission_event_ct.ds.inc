@@ -101,7 +101,7 @@ function gsb_feature_admission_event_ct_ds_field_settings_info() {
   $ds_fieldsetting->view_mode = 'compact';
   $ds_fieldsetting->settings = array(
     'title' => array(
-      'weight' => '1',
+      'weight' => '2',
       'label' => 'hidden',
       'format' => 'default',
       'formatter_settings' => array(
@@ -945,13 +945,15 @@ function gsb_feature_admission_event_ct_ds_layout_settings_info() {
     'regions' => array(
       'ds_content' => array(
         0 => 'field_event_date',
-        1 => 'title',
-        2 => 'field_link_single',
-        3 => 'field_event_location',
+        1 => 'group_wrapper_title',
+        2 => 'title',
+        3 => 'field_link_single',
+        4 => 'field_event_location',
       ),
     ),
     'fields' => array(
       'field_event_date' => 'ds_content',
+      'group_wrapper_title' => 'ds_content',
       'title' => 'ds_content',
       'field_link_single' => 'ds_content',
       'field_event_location' => 'ds_content',
@@ -1069,18 +1071,20 @@ function gsb_feature_admission_event_ct_ds_layout_settings_info() {
     'regions' => array(
       'ds_content' => array(
         0 => 'field_event_date',
-        1 => 'title',
-        2 => 'field_link_single',
-        3 => 'field_event_location',
+        1 => 'group_wrapper_title',
+        2 => 'title',
+        3 => 'field_link_single',
         4 => 'field_editorial_summary',
+        5 => 'field_event_location',
       ),
     ),
     'fields' => array(
       'field_event_date' => 'ds_content',
+      'group_wrapper_title' => 'ds_content',
       'title' => 'ds_content',
       'field_link_single' => 'ds_content',
-      'field_event_location' => 'ds_content',
       'field_editorial_summary' => 'ds_content',
+      'field_event_location' => 'ds_content',
     ),
     'classes' => array(),
     'wrappers' => array(
