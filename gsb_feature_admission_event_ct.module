@@ -176,3 +176,19 @@ function gsb_feature_admission_event_ct_form_validate($form, &$form_state) {
     }
   }
 }
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function gsb_feature_admission_event_ct_form_views_exposed_form_alter(&$form, $form_state) {
+  if ($form['#id'] == 'views-exposed-form-admission-events-mba-admission-panel-pane') {
+    $form['#validate'][] = 'gsb_feature_admission_event_ct_exposed_form_validate';
+  }
+}
+
+/**
+ * Validate handler for admission-events exposed filters
+ */
+function gsb_feature_admission_event_ct_exposed_form_validate(&$form, &$form_state) {
+  unset($_SESSION['messages']);
+}
