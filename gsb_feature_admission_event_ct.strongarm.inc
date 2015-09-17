@@ -106,9 +106,6 @@ function gsb_feature_admission_event_ct_strongarm() {
       'event_contacts' => array(
         'custom_settings' => FALSE,
       ),
-      'main_list' => array(
-        'custom_settings' => TRUE,
-      ),
     ),
     'extra_fields' => array(
       'form' => array(

@@ -1,7 +1,7 @@
 name = GSB Feature Admission Event Content Type
 core = 7.x
 package = GSB
-version = 7.x-5.0
+version = 7.x-5.19
 project = gsb_feature_admission_event_ct
 dependencies[] = addressfield
 dependencies[] = concat_field
@@ -28,6 +28,7 @@ dependencies[] = submit_field
 dependencies[] = taxonomy
 dependencies[] = text
 dependencies[] = tzfield
+datestamp = 1442434028
 features[ctools][] = ds:ds:1
 features[ctools][] = field_group:field_group:1
 features[ctools][] = panelizer:panelizer:1
