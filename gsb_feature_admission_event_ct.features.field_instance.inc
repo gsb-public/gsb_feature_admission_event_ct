@@ -40,6 +40,12 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 4,
       ),
+      'event_contacts' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 24,
+      ),
       'expanded' => array(
         'label' => 'hidden',
         'settings' => array(),
@@ -186,6 +192,12 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 32,
       ),
+      'event_contacts' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 2,
+      ),
       'expanded' => array(
         'label' => 'above',
         'settings' => array(),
@@ -267,6 +279,12 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
         ),
         'type' => 'date_default',
         'weight' => 6,
+      ),
+      'event_contacts' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'expanded' => array(
         'label' => 'above',
@@ -382,6 +400,12 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
         ),
         'type' => 'smart_trim_format',
         'weight' => 2,
+      ),
+      'event_contacts' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 18,
       ),
       'expanded' => array(
         'label' => 'hidden',
@@ -554,6 +578,19 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 19,
       ),
+      'event_contacts' => array(
+        'label' => 'above',
+        'module' => 'email_contact',
+        'settings' => array(
+          'conditions' => array(),
+          'custom_path' => '',
+          'default_message' => '[current-user:name] sent a message using the contact form at [current-page:url].',
+          'link_text' => 'Contact person by email',
+          'redirection_to' => 'front',
+        ),
+        'type' => 'email_contact_link',
+        'weight' => 17,
+      ),
       'expanded' => array(
         'label' => 'hidden',
         'settings' => array(),
@@ -633,6 +670,12 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 28,
+      ),
+      'event_contacts' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 16,
       ),
       'expanded' => array(
         'label' => 'above',
@@ -723,6 +766,12 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
         ),
         'type' => 'gsb_field_formatter_split_date_format',
         'weight' => 1,
+      ),
+      'event_contacts' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 13,
       ),
       'expanded' => array(
         'label' => 'hidden',
@@ -845,6 +894,12 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 24,
       ),
+      'event_contacts' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 1,
+      ),
       'expanded' => array(
         'label' => 'above',
         'settings' => array(),
@@ -942,6 +997,12 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
         ),
         'type' => 'field_collection_fields',
         'weight' => 10,
+      ),
+      'event_contacts' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 5,
       ),
       'expanded' => array(
         'label' => 'above',
@@ -1041,6 +1102,12 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
         'type' => 'field_collection_fields',
         'weight' => 5,
       ),
+      'event_contacts' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 6,
+      ),
       'expanded' => array(
         'label' => 'above',
         'settings' => array(),
@@ -1127,6 +1194,12 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 31,
       ),
+      'event_contacts' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 10,
+      ),
       'expanded' => array(
         'label' => 'hidden',
         'settings' => array(),
@@ -1205,6 +1278,12 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 29,
+      ),
+      'event_contacts' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 14,
       ),
       'expanded' => array(
         'label' => 'hidden',
@@ -1349,6 +1428,12 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
         'type' => 'link_label',
         'weight' => 9,
       ),
+      'event_contacts' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 9,
+      ),
       'expanded' => array(
         'label' => 'hidden',
         'settings' => array(),
@@ -1459,6 +1544,12 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 18,
+      ),
+      'event_contacts' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 19,
       ),
       'expanded' => array(
         'label' => 'hidden',
@@ -1573,6 +1664,12 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 23,
       ),
+      'event_contacts' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 20,
+      ),
       'expanded' => array(
         'label' => 'above',
         'settings' => array(),
@@ -1650,6 +1747,12 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 22,
+      ),
+      'event_contacts' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 15,
       ),
       'expanded' => array(
         'label' => 'hidden',
@@ -1732,6 +1835,12 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 21,
+      ),
+      'event_contacts' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 23,
       ),
       'expanded' => array(
         'label' => 'hidden',
@@ -1870,6 +1979,12 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 30,
       ),
+      'event_contacts' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 22,
+      ),
       'expanded' => array(
         'label' => 'above',
         'settings' => array(),
@@ -1948,6 +2063,12 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 20,
+      ),
+      'event_contacts' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 21,
       ),
       'expanded' => array(
         'label' => 'hidden',
@@ -2118,6 +2239,12 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
         'type' => 'link_label',
         'weight' => 8,
       ),
+      'event_contacts' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 12,
+      ),
       'expanded' => array(
         'label' => 'hidden',
         'settings' => array(),
@@ -2225,6 +2352,12 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
         ),
         'type' => 'text_default',
         'weight' => 10,
+      ),
+      'event_contacts' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 8,
       ),
       'expanded' => array(
         'label' => 'above',
@@ -2374,6 +2507,12 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 25,
       ),
+      'event_contacts' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 11,
+      ),
       'expanded' => array(
         'label' => 'above',
         'settings' => array(),
@@ -2479,6 +2618,12 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 25,
       ),
+      'event_contacts' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 4,
+      ),
       'expanded' => array(
         'label' => 'above',
         'settings' => array(),
@@ -2556,6 +2701,12 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 27,
+      ),
+      'event_contacts' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 3,
       ),
       'expanded' => array(
         'label' => 'above',
@@ -2644,6 +2795,12 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
         ),
         'type' => 'gsb_field_formatter_time_zone_abbreviated',
         'weight' => 2,
+      ),
+      'event_contacts' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 7,
       ),
       'expanded' => array(
         'label' => 'hidden',
