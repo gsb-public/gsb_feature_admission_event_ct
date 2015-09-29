@@ -3,34 +3,31 @@
     attach: function (context, settings) {
 
     // function to hide the vertical tabs
-    var cleanupFieldsets = function($event) {
-    // tabs to be hidden
+      var cleanupFieldsets = function($event) {
+        // tabs to be hidden
       var hide_fieldgroups = {
-        node_admission_event_form_group_description: "node_admission_event_form_group_description",
-        node_admission_event_form_group_speakers: "node_admission_event_form_group_speakers",
-        node_admission_event_form_group_registration: "node_admission_event_form_group_registration",
-        node_admission_event_form_group_schedule: "node_admission_event_form_group_schedule",
-        node_admission_event_form_group_contact: "node_admission_event_form_group_contact"
+        Description : "Description",
+        Speakers: "Speakers",
+        RegistrationPricing: "Registration",
+        Schedule: "Schedule",
+        ContactInformation: "Contact Information"
       };
 
-      $("fieldset").each(function(){
-        var fieldset = $(this);
-        var data = fieldset.data();
-        // Vertical tab support
-        if (data && data.verticalTab) {
-          for (var key in hide_fieldgroups) {
-            if (hide_fieldgroups.hasOwnProperty(key)) {
-              if (data.verticalTab.fieldset[0].id === hide_fieldgroups[data.verticalTab.fieldset[0].id] && $event == 1) {
-                fieldset.data('verticalTab').item.hide();
-              }
-              else {
-                fieldset.data('verticalTab').item.show();
-              }
+      $(".field-group-tabs-wrapper  .vertical-tab-button").each(function () {
+        for (var key in hide_fieldgroups) {
+          if ($event == 1) {
+            if (hide_fieldgroups[key] == $(this).text()) {
+              $(this).hide();
             }
           }
+          else {
+            $(this).show();
+          }
+
         }
       });
     } // end of cleanupFieldsets
+
 
     $(document).ready(function() {
       $("[id^=edit-field-event-detail-und-]").change(function () {
@@ -41,8 +38,6 @@
         }
       });
       $("label[for=edit-field-link-single-und-0-attributes-target]").children().hide();
-      // hide vertical tabs
-      cleanupFieldsets($("input[type='radio'][name='field_event_detail[und]']:checked").val());
 
     // clear the fields based on speaker type
       $("[name*='[field_speakers_person_type][und]']").each(function(){
