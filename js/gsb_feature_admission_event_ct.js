@@ -6,7 +6,7 @@
       var cleanupFieldsets = function($event) {
         // tabs to be hidden
       var hide_fieldgroups = {
-        Description : "Description",
+        Description : "Description *",
         Speakers: "Speakers",
         RegistrationPricing: "Registration",
         Schedule: "Schedule",
