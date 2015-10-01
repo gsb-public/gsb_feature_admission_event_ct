@@ -2162,6 +2162,12 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
         'type' => 'gsb_field_formatter_time_zone_abbreviated',
         'weight' => 7,
       ),
+      'event_contacts' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'expanded' => array(
         'label' => 'above',
         'settings' => array(),

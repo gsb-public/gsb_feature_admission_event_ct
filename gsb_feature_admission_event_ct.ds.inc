@@ -264,23 +264,16 @@ function gsb_feature_admission_event_ct_ds_field_settings_info() {
         ),
       ),
     ),
-    'field_link_single' => array(
+    'field_event_date' => array(
       'formatter_settings' => array(
         'ft' => array(
           'func' => 'theme_ds_field_expert',
           'ow' => TRUE,
           'ow-el' => 'div',
-          'ow-cl' => 'field-name-title',
-          'ow-def-cl' => FALSE,
+          'ow-cl' => '',
+          'ow-def-cl' => TRUE,
           'ow-at' => '',
           'ow-def-at' => FALSE,
-          'fi' => TRUE,
-          'fi-el' => 'h2',
-          'fi-cl' => '',
-          'fi-at' => '',
-          'fi-def-at' => FALSE,
-          'fi-odd-even' => FALSE,
-          'fi-first-last' => FALSE,
         ),
       ),
     ),
@@ -360,6 +353,20 @@ function gsb_feature_admission_event_ct_ds_field_settings_info() {
         ),
       ),
     ),
+    'field_register_time_zone' => array(
+      'formatter_settings' => array(
+        'ft' => array(
+          'func' => 'theme_ds_field_expert',
+          'suffix' => '<a class="find-time" href="http://timeanddate.com/worldclock/converter.html" target="_blank">Find local time</a>',
+          'ow' => TRUE,
+          'ow-el' => 'span',
+          'ow-cl' => '',
+          'ow-def-cl' => TRUE,
+          'ow-at' => '',
+          'ow-def-at' => FALSE,
+        ),
+      ),
+    ),
     'field_schedule' => array(
       'formatter_settings' => array(
         'ft' => array(
@@ -379,20 +386,6 @@ function gsb_feature_admission_event_ct_ds_field_settings_info() {
       'formatter_settings' => array(
         'ft' => array(
           'func' => 'theme_ds_field_expert',
-          'ow' => TRUE,
-          'ow-el' => 'span',
-          'ow-cl' => '',
-          'ow-def-cl' => TRUE,
-          'ow-at' => '',
-          'ow-def-at' => FALSE,
-        ),
-      ),
-    ),
-    'field_register_time_zone' => array(
-      'formatter_settings' => array(
-        'ft' => array(
-          'func' => 'theme_ds_field_expert',
-          'suffix' => '<a class="find-time" href="http://timeanddate.com/worldclock/converter.html" target="_blank">Find local time</a>',
           'ow' => TRUE,
           'ow-el' => 'span',
           'ow-cl' => '',
