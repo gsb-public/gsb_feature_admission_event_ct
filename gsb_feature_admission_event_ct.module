@@ -187,5 +187,7 @@ function gsb_feature_admission_event_ct_form_views_exposed_form_alter(&$form, $f
  * Validate handler for admission-events exposed filters
  */
 function gsb_feature_admission_event_ct_exposed_form_validate(&$form, &$form_state) {
-  unset($_SESSION['messages']);
+  if (!isset($_SESSION)) {
+    unset($_SESSION['messages']);
+  }
 }
