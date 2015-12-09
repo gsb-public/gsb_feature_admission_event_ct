@@ -55,6 +55,9 @@
         });
       });
 
+      if ($('#edit-field-event-detail-und-1').is(':checked')) {
+        cleanupFieldsets($('#edit-field-event-detail-und-1').val());
+      }
     });
 
       // attach speakers lookup
