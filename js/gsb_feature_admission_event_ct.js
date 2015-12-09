@@ -6,7 +6,7 @@
       var cleanupFieldsets = function($event) {
         // tabs to be hidden
       var hide_fieldgroups = {
-        Description : "Description *",
+        Description : "Description",
         Speakers: "Speakers",
         RegistrationPricing: "Registration",
         Schedule: "Schedule",
@@ -16,7 +16,7 @@
       $(".field-group-tabs-wrapper  .vertical-tab-button").each(function () {
         for (var key in hide_fieldgroups) {
           if ($event == 1) {
-            if (hide_fieldgroups[key] == $(this).text()) {
+            if ($(this).text().indexOf(hide_fieldgroups[key]) != -1) {  
               $(this).hide();
             }
           }
