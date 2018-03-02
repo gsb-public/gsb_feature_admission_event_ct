@@ -8,7 +8,7 @@
  * Implements hook_field_group_info().
  */
 function gsb_feature_admission_event_ct_field_group_info() {
-  $export = array();
+  $field_groups = array();
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -37,7 +37,7 @@ function gsb_feature_admission_event_ct_field_group_info() {
       ),
     ),
   );
-  $export['group_contact|node|admission_event|form'] = $field_group;
+  $field_groups['group_contact|node|admission_event|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -64,7 +64,7 @@ function gsb_feature_admission_event_ct_field_group_info() {
       ),
     ),
   );
-  $export['group_description|node|admission_event|form'] = $field_group;
+  $field_groups['group_description|node|admission_event|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -91,7 +91,7 @@ function gsb_feature_admission_event_ct_field_group_info() {
       ),
     ),
   );
-  $export['group_event_type|node|admission_event|form'] = $field_group;
+  $field_groups['group_event_type|node|admission_event|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -118,7 +118,7 @@ function gsb_feature_admission_event_ct_field_group_info() {
       ),
     ),
   );
-  $export['group_keywords|node|admission_event|form'] = $field_group;
+  $field_groups['group_keywords|node|admission_event|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -145,7 +145,7 @@ function gsb_feature_admission_event_ct_field_group_info() {
       ),
     ),
   );
-  $export['group_locations|node|admission_event|form'] = $field_group;
+  $field_groups['group_locations|node|admission_event|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -172,7 +172,7 @@ function gsb_feature_admission_event_ct_field_group_info() {
       ),
     ),
   );
-  $export['group_region|node|admission_event|form'] = $field_group;
+  $field_groups['group_region|node|admission_event|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -202,7 +202,7 @@ function gsb_feature_admission_event_ct_field_group_info() {
       ),
     ),
   );
-  $export['group_registration|node|admission_event|form'] = $field_group;
+  $field_groups['group_registration|node|admission_event|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -229,7 +229,7 @@ function gsb_feature_admission_event_ct_field_group_info() {
       ),
     ),
   );
-  $export['group_schedule|node|admission_event|form'] = $field_group;
+  $field_groups['group_schedule|node|admission_event|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -256,7 +256,7 @@ function gsb_feature_admission_event_ct_field_group_info() {
       ),
     ),
   );
-  $export['group_speakers|node|admission_event|form'] = $field_group;
+  $field_groups['group_speakers|node|admission_event|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -290,7 +290,7 @@ function gsb_feature_admission_event_ct_field_group_info() {
       'formatter' => 'open',
     ),
   );
-  $export['group_wrapper_date|node|admission_event|default'] = $field_group;
+  $field_groups['group_wrapper_date|node|admission_event|default'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -323,7 +323,7 @@ function gsb_feature_admission_event_ct_field_group_info() {
       ),
     ),
   );
-  $export['group_wrapper_event|node|admission_event|form'] = $field_group;
+  $field_groups['group_wrapper_event|node|admission_event|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -356,7 +356,7 @@ function gsb_feature_admission_event_ct_field_group_info() {
       'formatter' => 'open',
     ),
   );
-  $export['group_wrapper_title|node|admission_event|compact'] = $field_group;
+  $field_groups['group_wrapper_title|node|admission_event|compact'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -389,7 +389,22 @@ function gsb_feature_admission_event_ct_field_group_info() {
       'formatter' => 'open',
     ),
   );
-  $export['group_wrapper_title|node|admission_event|expanded'] = $field_group;
+  $field_groups['group_wrapper_title|node|admission_event|expanded'] = $field_group;
 
-  return $export;
+  // Translatables
+  // Included for use with string extractors like potx.
+  t('Contact Information');
+  t('Date wrapper');
+  t('Description');
+  t('Event');
+  t('Event Type');
+  t('Keyword');
+  t('Locations');
+  t('Region');
+  t('Registration');
+  t('Schedule');
+  t('Speakers');
+  t('Title wrapper');
+
+  return $field_groups;
 }

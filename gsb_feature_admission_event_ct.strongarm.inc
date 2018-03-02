@@ -13,6 +13,27 @@ function gsb_feature_admission_event_ct_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'diff_enable_revisions_page_node_admission_event';
+  $strongarm->value = 1;
+  $export['diff_enable_revisions_page_node_admission_event'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'diff_show_preview_changes_node_admission_event';
+  $strongarm->value = 1;
+  $export['diff_show_preview_changes_node_admission_event'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'diff_view_mode_preview_node_admission_event';
+  $strongarm->value = 'full';
+  $export['diff_view_mode_preview_node_admission_event'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'field_bundle_settings_node__admission_event';
   $strongarm->value = array(
     'view_modes' => array(
@@ -175,25 +196,72 @@ function gsb_feature_admission_event_ct_strongarm() {
   $strongarm->name = 'panelizer_defaults_node_admission_event';
   $strongarm->value = array(
     'status' => 1,
+    'help' => '',
     'view modes' => array(
       'page_manager' => array(
         'status' => 1,
+        'substitute' => '',
         'default' => 1,
         'choice' => 1,
       ),
       'default' => array(
         'status' => 0,
+        'substitute' => 0,
         'default' => 0,
         'choice' => 0,
       ),
       'teaser' => array(
         'status' => 0,
+        'substitute' => 0,
+        'default' => 0,
+        'choice' => 0,
+      ),
+      'compact' => array(
+        'status' => 0,
+        'substitute' => 0,
+        'default' => 0,
+        'choice' => 0,
+      ),
+      'expanded' => array(
+        'status' => 0,
+        'substitute' => 0,
+        'default' => 0,
+        'choice' => 0,
+      ),
+      'event_contacts' => array(
+        'status' => 0,
+        'substitute' => 0,
+        'default' => 0,
+        'choice' => 0,
+      ),
+      'alumni_featured_content' => array(
+        'status' => 0,
+        'substitute' => 0,
+        'default' => 0,
+        'choice' => 0,
+      ),
+      'idea_story_related' => array(
+        'status' => 0,
+        'substitute' => 0,
+        'default' => 0,
+        'choice' => 0,
+      ),
+      'main_list' => array(
+        'status' => 0,
+        'substitute' => 0,
         'default' => 0,
         'choice' => 0,
       ),
     ),
   );
   $export['panelizer_defaults_node_admission_event'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'panelizer_node:admission_event:page_manager_selection';
+  $strongarm->value = 'node:admission_event:default';
+  $export['panelizer_node:admission_event:page_manager_selection'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */

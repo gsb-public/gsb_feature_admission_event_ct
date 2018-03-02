@@ -10,7 +10,7 @@
 function gsb_feature_admission_event_ct_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'node-admission_event-field_body'
+  // Exported field_instance: 'node-admission_event-field_body'.
   $field_instances['node-admission_event-field_body'] = array(
     'bundle' => 'admission_event',
     'custom_add_another' => '',
@@ -161,7 +161,7 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-admission_event-field_calendar_display'
+  // Exported field_instance: 'node-admission_event-field_calendar_display'.
   $field_instances['node-admission_event-field_calendar_display'] = array(
     'bundle' => 'admission_event',
     'custom_add_another' => '',
@@ -244,7 +244,7 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-admission_event-field_date_time'
+  // Exported field_instance: 'node-admission_event-field_date_time'.
   $field_instances['node-admission_event-field_date_time'] = array(
     'bundle' => 'admission_event',
     'custom_add_another' => '',
@@ -360,7 +360,7 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-admission_event-field_editorial_summary'
+  // Exported field_instance: 'node-admission_event-field_editorial_summary'.
   $field_instances['node-admission_event-field_editorial_summary'] = array(
     'bundle' => 'admission_event',
     'custom_add_another' => '',
@@ -547,7 +547,7 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-admission_event-field_email'
+  // Exported field_instance: 'node-admission_event-field_email'.
   $field_instances['node-admission_event-field_email'] = array(
     'bundle' => 'admission_event',
     'custom_add_another' => '',
@@ -646,7 +646,7 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-admission_event-field_event_category'
+  // Exported field_instance: 'node-admission_event-field_event_category'.
   $field_instances['node-admission_event-field_event_category'] = array(
     'bundle' => 'admission_event',
     'default_value' => NULL,
@@ -725,7 +725,7 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-admission_event-field_event_date'
+  // Exported field_instance: 'node-admission_event-field_event_date'.
   $field_instances['node-admission_event-field_event_date'] = array(
     'bundle' => 'admission_event',
     'custom_add_another' => '',
@@ -863,7 +863,7 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-admission_event-field_event_detail'
+  // Exported field_instance: 'node-admission_event-field_event_detail'.
   $field_instances['node-admission_event-field_event_detail'] = array(
     'bundle' => 'admission_event',
     'custom_add_another' => '',
@@ -959,7 +959,7 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-admission_event-field_event_location'
+  // Exported field_instance: 'node-admission_event-field_event_location'.
   $field_instances['node-admission_event-field_event_location'] = array(
     'bundle' => 'admission_event',
     'custom_add_another' => '',
@@ -1071,7 +1071,7 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-admission_event-field_event_speakers'
+  // Exported field_instance: 'node-admission_event-field_event_speakers'.
   $field_instances['node-admission_event-field_event_speakers'] = array(
     'bundle' => 'admission_event',
     'custom_add_another' => '',
@@ -1163,7 +1163,7 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-admission_event-field_event_status'
+  // Exported field_instance: 'node-admission_event-field_event_status'.
   $field_instances['node-admission_event-field_event_status'] = array(
     'bundle' => 'admission_event',
     'custom_add_another' => '',
@@ -1252,7 +1252,7 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-admission_event-field_item_id'
+  // Exported field_instance: 'node-admission_event-field_item_id'.
   $field_instances['node-admission_event-field_item_id'] = array(
     'bundle' => 'admission_event',
     'custom_add_another' => '',
@@ -1398,7 +1398,7 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-admission_event-field_link_event_more_info'
+  // Exported field_instance: 'node-admission_event-field_link_event_more_info'.
   $field_instances['node-admission_event-field_link_event_more_info'] = array(
     'bundle' => 'admission_event',
     'custom_add_another' => '',
@@ -1512,7 +1512,7 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-admission_event-field_link_single'
+  // Exported field_instance: 'node-admission_event-field_link_single'.
   $field_instances['node-admission_event-field_link_single'] = array(
     'bundle' => 'admission_event',
     'custom_add_another' => '',
@@ -1632,7 +1632,7 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-admission_event-field_pathauto_title_alias'
+  // Exported field_instance: 'node-admission_event-field_pathauto_title_alias'.
   $field_instances['node-admission_event-field_pathauto_title_alias'] = array(
     'bundle' => 'admission_event',
     'custom_add_another' => '',
@@ -1721,7 +1721,7 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-admission_event-field_person_ref'
+  // Exported field_instance: 'node-admission_event-field_person_ref'.
   $field_instances['node-admission_event-field_person_ref'] = array(
     'bundle' => 'admission_event',
     'custom_add_another' => '',
@@ -1809,7 +1809,7 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-admission_event-field_person_title'
+  // Exported field_instance: 'node-admission_event-field_person_title'.
   $field_instances['node-admission_event-field_person_title'] = array(
     'bundle' => 'admission_event',
     'custom_add_another' => '',
@@ -1952,7 +1952,7 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-admission_event-field_program_single'
+  // Exported field_instance: 'node-admission_event-field_program_single'.
   $field_instances['node-admission_event-field_program_single'] = array(
     'bundle' => 'admission_event',
     'custom_add_another' => '',
@@ -2037,7 +2037,7 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-admission_event-field_region'
+  // Exported field_instance: 'node-admission_event-field_region'.
   $field_instances['node-admission_event-field_region'] = array(
     'bundle' => 'admission_event',
     'custom_add_another' => '',
@@ -2121,7 +2121,7 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-admission_event-field_register_time_zone'
+  // Exported field_instance: 'node-admission_event-field_register_time_zone'.
   $field_instances['node-admission_event-field_register_time_zone'] = array(
     'bundle' => 'admission_event',
     'custom_add_another' => '',
@@ -2215,7 +2215,7 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-admission_event-field_register_url'
+  // Exported field_instance: 'node-admission_event-field_register_url'.
   $field_instances['node-admission_event-field_register_url'] = array(
     'bundle' => 'admission_event',
     'custom_add_another' => '',
@@ -2329,7 +2329,7 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-admission_event-field_schedule'
+  // Exported field_instance: 'node-admission_event-field_schedule'.
   $field_instances['node-admission_event-field_schedule'] = array(
     'bundle' => 'admission_event',
     'custom_add_another' => '',
@@ -2487,7 +2487,7 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-admission_event-field_search_field'
+  // Exported field_instance: 'node-admission_event-field_search_field'.
   $field_instances['node-admission_event-field_search_field'] = array(
     'bundle' => 'admission_event',
     'custom_add_another' => '',
@@ -2598,7 +2598,7 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-admission_event-field_submit'
+  // Exported field_instance: 'node-admission_event-field_submit'.
   $field_instances['node-admission_event-field_submit'] = array(
     'bundle' => 'admission_event',
     'custom_add_another' => '',
@@ -2681,7 +2681,7 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-admission_event-field_tag'
+  // Exported field_instance: 'node-admission_event-field_tag'.
   $field_instances['node-admission_event-field_tag'] = array(
     'bundle' => 'admission_event',
     'custom_add_another' => '',
@@ -2768,7 +2768,7 @@ function gsb_feature_admission_event_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-admission_event-field_time_zone'
+  // Exported field_instance: 'node-admission_event-field_time_zone'.
   $field_instances['node-admission_event-field_time_zone'] = array(
     'bundle' => 'admission_event',
     'custom_add_another' => '',
