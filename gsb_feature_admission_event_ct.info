@@ -101,6 +101,7 @@ features[variable][] = panelizer_defaults_node_admission_event
 features[variable][] = panelizer_node:admission_event:page_manager_selection
 features[variable][] = panelizer_node:admission_event_allowed_layouts
 features[variable][] = panelizer_node:admission_event_allowed_layouts_default
+features[variable][] = panelizer_node:admission_event_allowed_types
 features[variable][] = panelizer_node:admission_event_allowed_types_default
 features[variable][] = panelizer_node:admission_event_default
 features[variable][] = pathauto_node_admission_event_pattern
