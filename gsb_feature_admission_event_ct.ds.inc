@@ -517,7 +517,7 @@ function gsb_feature_admission_event_ct_ds_field_settings_info() {
   $ds_fieldsetting->view_mode = 'main_list';
   $ds_fieldsetting->settings = array(
     'title' => array(
-      'weight' => '1',
+      'weight' => '2',
       'label' => 'hidden',
       'format' => 'default',
       'formatter_settings' => array(
@@ -580,6 +580,21 @@ function gsb_feature_admission_event_ct_ds_field_settings_info() {
       'formatter_settings' => array(
         'ft' => array(
           'func' => 'theme_ds_field_expert',
+          'ow' => TRUE,
+          'ow-el' => 'div',
+          'ow-cl' => '',
+          'ow-def-cl' => TRUE,
+          'ow-at' => '',
+          'ow-def-at' => FALSE,
+        ),
+      ),
+    ),
+    'field_event_status' => array(
+      'formatter_settings' => array(
+        'ft' => array(
+          'func' => 'theme_ds_field_expert',
+          'prefix' => '<h3>',
+          'suffix' => '<span class="pipe">| </span></h3>',
           'ow' => TRUE,
           'ow-el' => 'div',
           'ow-cl' => '',
@@ -808,13 +823,15 @@ function gsb_feature_admission_event_ct_ds_layout_settings_info() {
     'regions' => array(
       'ds_content' => array(
         0 => 'field_event_date',
-        1 => 'title',
-        2 => 'field_link_single',
-        3 => 'field_event_location',
+        1 => 'field_event_status',
+        2 => 'title',
+        3 => 'field_link_single',
+        4 => 'field_event_location',
       ),
     ),
     'fields' => array(
       'field_event_date' => 'ds_content',
+      'field_event_status' => 'ds_content',
       'title' => 'ds_content',
       'field_link_single' => 'ds_content',
       'field_event_location' => 'ds_content',
@@ -828,6 +845,7 @@ function gsb_feature_admission_event_ct_ds_layout_settings_info() {
     'layout_attributes_merge' => 1,
     'layout_link_attribute' => '',
     'layout_link_custom' => '',
+    'layout_disable_css' => FALSE,
   );
   $export['node|admission_event|main_list'] = $ds_layout;
 
