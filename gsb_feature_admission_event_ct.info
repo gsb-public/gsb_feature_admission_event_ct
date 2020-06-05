@@ -56,6 +56,7 @@ features[field_group][] = group_region|node|admission_event|form
 features[field_group][] = group_registration|node|admission_event|form
 features[field_group][] = group_schedule|node|admission_event|form
 features[field_group][] = group_speakers|node|admission_event|form
+features[field_group][] = group_title_wrapper|node|admission_event|main_list
 features[field_group][] = group_wrapper_date|node|admission_event|default
 features[field_group][] = group_wrapper_event|node|admission_event|form
 features[field_group][] = group_wrapper_title|node|admission_event|compact

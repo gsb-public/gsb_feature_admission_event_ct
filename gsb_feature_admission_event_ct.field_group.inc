@@ -261,6 +261,40 @@ function gsb_feature_admission_event_ct_field_group_info() {
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
+  $field_group->identifier = 'group_title_wrapper|node|admission_event|main_list';
+  $field_group->group_name = 'group_title_wrapper';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'admission_event';
+  $field_group->mode = 'main_list';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => 'Title Wrapper',
+    'weight' => '1',
+    'children' => array(
+      0 => 'field_link_single',
+      1 => 'field_event_status',
+      2 => 'title',
+    ),
+    'format_type' => 'div',
+    'format_settings' => array(
+      'label' => 'Title Wrapper',
+      'instance_settings' => array(
+        'id' => '',
+        'classes' => 'group-title-wrapper field-group-div',
+        'description' => '',
+        'show_label' => '0',
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'fast',
+      ),
+      'formatter' => 'open',
+    ),
+  );
+  $field_groups['group_title_wrapper|node|admission_event|main_list'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
   $field_group->identifier = 'group_wrapper_date|node|admission_event|default';
   $field_group->group_name = 'group_wrapper_date';
   $field_group->entity_type = 'node';
@@ -404,6 +438,7 @@ function gsb_feature_admission_event_ct_field_group_info() {
   t('Registration');
   t('Schedule');
   t('Speakers');
+  t('Title Wrapper');
   t('Title wrapper');
 
   return $field_groups;

@@ -517,21 +517,15 @@ function gsb_feature_admission_event_ct_ds_field_settings_info() {
   $ds_fieldsetting->view_mode = 'main_list';
   $ds_fieldsetting->settings = array(
     'title' => array(
-      'weight' => '2',
+      'weight' => '3',
       'label' => 'hidden',
       'format' => 'default',
       'formatter_settings' => array(
         'link' => '1',
-        'wrapper' => 'h3',
+        'wrapper' => '',
         'class' => '',
         'ft' => array(
           'func' => 'theme_ds_field_expert',
-          'ow' => TRUE,
-          'ow-el' => 'div',
-          'ow-cl' => '',
-          'ow-def-cl' => TRUE,
-          'ow-at' => '',
-          'ow-def-at' => FALSE,
         ),
         'conditions' => array(
           0 => array(
@@ -560,19 +554,6 @@ function gsb_feature_admission_event_ct_ds_field_settings_info() {
       'formatter_settings' => array(
         'ft' => array(
           'func' => 'theme_ds_field_expert',
-          'ow' => TRUE,
-          'ow-el' => 'div',
-          'ow-cl' => 'field-name-title',
-          'ow-def-cl' => TRUE,
-          'ow-at' => '',
-          'ow-def-at' => FALSE,
-          'fi' => TRUE,
-          'fi-el' => 'h3',
-          'fi-cl' => '',
-          'fi-at' => '',
-          'fi-def-at' => FALSE,
-          'fi-odd-even' => FALSE,
-          'fi-first-last' => FALSE,
         ),
       ),
     ),
@@ -593,20 +574,7 @@ function gsb_feature_admission_event_ct_ds_field_settings_info() {
       'formatter_settings' => array(
         'ft' => array(
           'func' => 'theme_ds_field_expert',
-          'suffix' => '<span class="event-status-pipe">| </span>',
-          'ow' => TRUE,
-          'ow-el' => 'div',
-          'ow-cl' => '',
-          'ow-def-cl' => TRUE,
-          'ow-at' => '',
-          'ow-def-at' => FALSE,
-          'fi' => TRUE,
-          'fi-el' => 'h3',
-          'fi-cl' => '',
-          'fi-at' => '',
-          'fi-def-at' => FALSE,
-          'fi-odd-even' => FALSE,
-          'fi-first-last' => FALSE,
+          'suffix' => ' |  ',
         ),
       ),
     ),
@@ -829,14 +797,16 @@ function gsb_feature_admission_event_ct_ds_layout_settings_info() {
     'regions' => array(
       'ds_content' => array(
         0 => 'field_event_date',
-        1 => 'field_event_status',
-        2 => 'title',
-        3 => 'field_link_single',
-        4 => 'field_event_location',
+        1 => 'group_title_wrapper',
+        2 => 'field_event_status',
+        3 => 'title',
+        4 => 'field_link_single',
+        5 => 'field_event_location',
       ),
     ),
     'fields' => array(
       'field_event_date' => 'ds_content',
+      'group_title_wrapper' => 'ds_content',
       'field_event_status' => 'ds_content',
       'title' => 'ds_content',
       'field_link_single' => 'ds_content',
