@@ -197,17 +197,19 @@ function gsb_feature_admission_event_ct_exposed_form_validate(&$form, &$form_sta
  */
 function gsb_feature_admission_event_ct_ds_pre_render_alter(&$layout_render_array, $context, &$vars) {
   if ($context['bundle'] == 'admission_event') {
-    if ($layout_render_array['ds_content'][1][0]['#markup'] == 'Active') {
-      $layout_render_array['ds_content'][1][0]['#markup'] = 'Open';
+    if ($layout_render_array['ds_content'][1]['field_event_status'][0]['#markup'] == 'Active') {
+      $layout_render_array['ds_content'][1]['field_event_status'][0]['#markup'] = 'Open';
     }
-    $layout_render_array['ds_content'][0][0]['#markup'] .= $location_markup;
     foreach ($layout_render_array as $field_index => $field_info) {
-      $location_type = $field_info[5][0]['entity']['field_collection_item'][$field_info[5]['#items'][0]['value']]['field_event_location_type']['#items'][0]['value'];
+      $fc_id = $field_info[5]['#items'][0]['value'];
+      $location_type = $field_info[5][0]['entity']['field_collection_item'][$fc_id]['field_event_location_type']['#items'][0]['value'];
       if ($location_type == 'Online') {
-        $location_markup = '<div class="ds-custom-text">Local time in</div>';
-        $location_markup .= $field_info[5][0]['entity']['field_collection_item'][$field_info[5]['#items'][0]['value']]['field_address'][0]['#markup'];
+        $location_markup = $field_info[5][0]['entity']['field_collection_item'][$fc_id]['field_address'][0]['#markup'];
+        if (!empty($location_markup)) {
+          $location_markup = '<div class="ds-custom-text">Local time in</div>' . $location_markup;
+        }
         $layout_render_array['ds_content'][0][0]['#markup'] .= $location_markup;
-        unset($layout_render_array['ds_content'][5][0]['entity']['field_collection_item'][$field_info[5]['#items'][0]['value']]['field_address']);
+        unset($layout_render_array['ds_content'][5][0]['entity']['field_collection_item'][$fc_id]['field_address']);
       }
     }
   }
