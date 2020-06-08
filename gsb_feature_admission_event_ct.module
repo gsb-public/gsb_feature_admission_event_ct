@@ -202,12 +202,12 @@ function gsb_feature_admission_event_ct_ds_pre_render_alter(&$layout_render_arra
     }
     $layout_render_array['ds_content'][0][0]['#markup'] .= $location_markup;
     foreach ($layout_render_array as $field_index => $field_info) {
-      $location_type = $field_info[4][0]['entity']['field_collection_item'][$field_info[4]['#items'][0]['value']]['field_event_location_type']['#items'][0]['value'];
+      $location_type = $field_info[5][0]['entity']['field_collection_item'][$field_info[5]['#items'][0]['value']]['field_event_location_type']['#items'][0]['value'];
       if ($location_type == 'Online') {
         $location_markup = '<div class="ds-custom-text">Local time in</div>';
-        $location_markup .= $field_info[4][0]['entity']['field_collection_item'][$field_info[4]['#items'][0]['value']]['field_address'][0]['#markup'];
+        $location_markup .= $field_info[5][0]['entity']['field_collection_item'][$field_info[5]['#items'][0]['value']]['field_address'][0]['#markup'];
         $layout_render_array['ds_content'][0][0]['#markup'] .= $location_markup;
-        unset($layout_render_array['ds_content'][4][0]['entity']['field_collection_item'][$field_info[4]['#items'][0]['value']]['field_address']);
+        unset($layout_render_array['ds_content'][5][0]['entity']['field_collection_item'][$field_info[5]['#items'][0]['value']]['field_address']);
       }
     }
   }
