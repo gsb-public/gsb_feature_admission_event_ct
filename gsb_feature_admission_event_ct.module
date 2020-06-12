@@ -198,7 +198,7 @@ function gsb_feature_admission_event_ct_exposed_form_validate(&$form, &$form_sta
 function gsb_feature_admission_event_ct_ds_pre_render_alter(&$layout_render_array, $context, &$vars) {
   if ($context['bundle'] == 'admission_event') {
     if ($layout_render_array['ds_content'][1]['field_event_status'][0]['#markup'] == 'Active') {
-      $layout_render_array['ds_content'][1]['field_event_status'][0]['#markup'] = 'Open';
+      unset($layout_render_array['ds_content'][1]['field_event_status']);
     }
     foreach ($layout_render_array as $field_index => $field_info) {
       $fc_id = $field_info[5]['#items'][0]['value'];
