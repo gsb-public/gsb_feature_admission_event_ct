@@ -215,10 +215,7 @@ function gsb_feature_admission_event_ct_ds_pre_render_alter(&$layout_render_arra
   }
 
   if ($context['bundle'] == 'event') {
-    $layout = 'ds_content';
-    if ($context['view_mode'] == 'expanded') {
-      $layout = 'left';
-    }
+    $layout = ($context['view_mode'] == 'expanded') ? "left" : "ds_content";
     foreach ($layout_render_array as $field_index => $field_info) {
       $fc_id = $field_info[4]['#items'][0]['value'];
       $location_type = $field_info[4][0]['entity']['field_collection_item'][$fc_id]['field_event_location_type']['#items'][0]['value'];
