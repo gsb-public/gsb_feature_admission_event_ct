@@ -215,12 +215,24 @@ function gsb_feature_admission_event_ct_ds_pre_render_alter(&$layout_render_arra
   }
 
   if ($context['bundle'] == 'event') {
-    $layout = ($context['view_mode'] == 'expanded') ? "left" : "ds_content";
+    if ($context['view_mode'] == 'expanded') {
+      $layout = "left";
+      $index = 4;
+    }
+    elseif ($context['view_mode'] == 'main_list') {
+      $layout = "left";
+      $index = 3;
+    }
+    else {
+      $layout = "ds_content";
+      $index = 4;
+    }
+
     foreach ($layout_render_array as $field_index => $field_info) {
-      $fc_id = $field_info[4]['#items'][0]['value'];
-      $location_type = $field_info[4][0]['entity']['field_collection_item'][$fc_id]['field_event_location_type']['#items'][0]['value'];
+      $fc_id = $field_info[$index]['#items'][0]['value'];
+      $location_type = $field_info[$index][0]['entity']['field_collection_item'][$fc_id]['field_event_location_type']['#items'][0]['value'];
       if ($location_type == 'Online') {
-        $layout_render_array[$layout][4][0]['entity']['field_collection_item'][$fc_id]['field_address']['#access'] = FALSE;
+        $layout_render_array[$layout][$index][0]['entity']['field_collection_item'][$fc_id]['field_address']['#access'] = FALSE;
       }
     }
   }
