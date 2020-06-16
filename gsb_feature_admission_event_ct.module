@@ -198,7 +198,7 @@ function gsb_feature_admission_event_ct_exposed_form_validate(&$form, &$form_sta
 function gsb_feature_admission_event_ct_ds_pre_render_alter(&$layout_render_array, $context, &$vars) {
   if ($context['bundle'] == 'admission_event') {
     if ($layout_render_array['ds_content'][1]['field_event_status'][0]['#markup'] == 'Active') {
-      unset($layout_render_array['ds_content'][1]['field_event_status']);
+      $layout_render_array['ds_content'][1]['field_event_status']['#access'] = FALSE;
     }
     foreach ($layout_render_array as $field_index => $field_info) {
       $fc_id = $field_info[5]['#items'][0]['value'];
@@ -209,7 +209,21 @@ function gsb_feature_admission_event_ct_ds_pre_render_alter(&$layout_render_arra
           $location_markup = '<div class="ds-custom-text">Local time in</div>' . $location_markup;
         }
         $layout_render_array['ds_content'][0][0]['#markup'] .= $location_markup;
-        unset($layout_render_array['ds_content'][5][0]['entity']['field_collection_item'][$fc_id]['field_address']);
+        $layout_render_array['ds_content'][5][0]['entity']['field_collection_item'][$fc_id]['field_address'] = FALSE;
+      }
+    }
+  }
+
+  if ($context['bundle'] == 'event') {
+    $layout = 'ds_content';
+    if ($context['view_mode'] == 'expanded') {
+      $layout = 'left';
+    }
+    foreach ($layout_render_array as $field_index => $field_info) {
+      $fc_id = $field_info[4]['#items'][0]['value'];
+      $location_type = $field_info[4][0]['entity']['field_collection_item'][$fc_id]['field_event_location_type']['#items'][0]['value'];
+      if ($location_type == 'Online') {
+        $layout_render_array[$layout][4][0]['entity']['field_collection_item'][$fc_id]['field_address']['#access'] = FALSE;
       }
     }
   }
